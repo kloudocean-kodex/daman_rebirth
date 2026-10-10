@@ -19,9 +19,9 @@ Sources are the seven project-original PNG assets in `public/assets`: hero, blin
 
 Technical references: [FFmpeg zoompan/xfade](https://ffmpeg.org/ffmpeg-filters.html), [MDN autoplay guidance](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Autoplay).
 
-## Genuine generated-motion upgrade: connection pending
+## Genuine generated-motion upgrade: free access under evaluation
 
-Runway was discovered as an available, but unconnected, integration. A genuine multi-shot generated film needs that provider connected, sufficient credits, and explicit approval of any paid usage. Never substitute a still-image camera edit and call it generated moving curtains.
+Runway's browser account was authenticated on 10 October 2026 and showed Personal / Free with 121 remaining credits. The inspected Gen-4, Gen-4 Turbo, Gen-4.5 and featured video models displayed Upgrade; selecting Gen-4 Turbo still showed Upgrade instead of a generation action. No credits were spent. Its separate ChatGPT integration is not connected. Google Flow and Adobe Firefly are being evaluated as alternatives; see `FREE-VIDEO-PROVIDER-RESEARCH.md`. Never substitute a still-image camera edit and call it generated moving curtains. New paid usage is outside the user's approved budget.
 
 Suggested shot briefs for image-to-video, using the corresponding original image as its first-frame reference:
 
@@ -32,7 +32,7 @@ Suggested shot briefs for image-to-video, using the corresponding original image
 5. **Security doors:** measured approach toward the contemporary screened entrance, grazing warm light across fine mesh and dark metal. No claims of certification, burglary resistance or a specific product brand.
 6. **Fly screens:** a still threshold and fine screen mesh, with natural leaf movement outside and a minimal camera drift. Preserve mesh topology, door frame and opening geometry.
 
-All shots: photoreal architectural editorial cinema, restrained grade, no people, no logos, no embedded text, no watermark, no fast motion, no flicker. Generate landscape masters first; inspect each shot before editing. Prepare separately art-directed portrait framing rather than blindly cropping the finished wide film.
+All shots: photoreal architectural editorial cinema, restrained grade, no people, no invented logos or embedded promotional text, no fast motion, no flicker. Retain any provider-required watermark; clean exports require a provider entitlement that expressly permits them. Generate landscape masters first; inspect each shot before editing. Prepare separately art-directed portrait framing rather than blindly cropping the finished wide film.
 
 ## Interaction direction
 

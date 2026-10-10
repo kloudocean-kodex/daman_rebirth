@@ -35,3 +35,5 @@ Set `FFMPEG_PATH` if FFmpeg is not on your PATH. See [docs/HERO-VIDEO.md](docs/H
 ## Audit and research
 
 See [docs/SITE-AUDIT-AND-RESEARCH.md](docs/SITE-AUDIT-AND-RESEARCH.md) for the captured public-site inventory, source record, claims policy, content decisions, and handoff gates.
+
+The [visual refinement record](docs/ANTIGRAVITY-AND-VISUAL-REFINEMENT.md) covers selected Antigravity concept assets, new original before/after imagery, the comparison interaction, and free-only generated-video limitations. The [Cloudflare repair record](docs/CLOUDFLARE-REPAIR.md) separates saved settings, deployments and actual browser verification.

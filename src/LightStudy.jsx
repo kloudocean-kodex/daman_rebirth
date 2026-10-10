@@ -5,7 +5,7 @@ export default function LightStudy() {
   return (
     <section className="light-study" aria-labelledby="light-study-title">
       <div className="light-study__scene" style={{ '--shade-opacity': (100 - daylight) / 145, '--light-opacity': daylight / 220, '--light-angle': `${-22 + daylight / 7}deg` }}>
-        <img src="/assets/daman-blinds-original.png" alt="An illustrative linen blind filtering sunlight in a contemporary living room" loading="lazy" />
+        <img src="/assets/daman-blinds.webp" alt="An illustrative linen blind filtering sunlight in a contemporary living room" loading="lazy" />
         <div className="light-study__shade" /><div className="light-study__rays" />
         <span className="light-study__scene-label">A study in light · Illustrative mood, not product performance</span>
       </div>

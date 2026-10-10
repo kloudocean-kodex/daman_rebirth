@@ -21,3 +21,11 @@ The dashboard displayed the saved command/output values after the modal closed. 
 Saving settings alone does not rebuild an existing deployment. The new Git commit must deploy successfully, and the public Pages URL must be inspected in a real browser. A green build is not proof of the live video, contact delivery or readiness to replace `damangroup.com.au`.
 
 The original business-domain website and its DNS are not changed by this repair. Contact remains phone/email, not a claimed delivered web enquiry. Genuine AI-generated scene motion remains dependent on a connected video provider.
+
+## Verified deployment and public browser result
+
+Commit `23f51dd7d5b02d91e60819949aeaecd43b3b340d` received a successful Cloudflare Pages check and deployed at `a91ff216-fc81-4df2-a807-ddafcd7a0a68`. Its public Pages URL rendered the full site rather than the previous empty page. Edge verified muted 26-second desktop film playback, the play/pause control and keyboard resume.
+
+The navigation-contrast refinement at `ea27256767fb907a7897cd4b9a862e52e4bbf1b0` also received a successful Pages check (`85db688c-4c96-4d80-8ef7-9a38f6608001`). The public response contained the matching compiled Vite bundles, not the raw `/src/main.jsx` script. Further visual refinements are published by the same Git integration; success must be checked for each later commit rather than inferred from these earlier releases.
+
+This verifies the Pages-hosted concept, not custom-domain cutover, real lead delivery, physical-device coverage or genuine generated-motion production.

@@ -1,16 +1,23 @@
-# React + Vite
+# Daman Group Rebirth
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An original, responsive Vite + React concept for Daman Group Pty Ltd. It is designed as a static Cloudflare Pages deployment and deliberately uses only verified public business information and original, AI-generated visuals.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Deploy to Cloudflare Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Framework preset: `Vite`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Node version: `20` or newer
 
-## Expanding the Oxlint configuration
+No runtime environment variables are required. Contact paths are `tel:` and `mailto:` links; add a server-side lead endpoint before replacing them with a web form.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Audit and research
+
+See [docs/SITE-AUDIT-AND-RESEARCH.md](docs/SITE-AUDIT-AND-RESEARCH.md) for the captured public-site inventory, source record, claims policy, content decisions, and handoff gates.

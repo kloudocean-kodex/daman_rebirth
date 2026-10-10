@@ -1,0 +1,47 @@
+{
+  "captured_at": "2026-10-10",
+  "source_url": "https://damangroup.com.au/index.html",
+  "scope": "URL metadata only; original files are private audit reference material and are not part of the public rebuild.",
+  "summary": { "images": 21, "stylesheets": 7, "scripts": 7, "inline_svgs": 0, "total": 35 },
+  "stylesheets": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css",
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+    "https://damangroup.com.au/lib/animate/animate.min.css",
+    "https://damangroup.com.au/css/bootstrap.min.css",
+    "https://damangroup.com.au/lib/owlcarousel/assets/owl.carousel.min.css",
+    "https://damangroup.com.au/css/style.css"
+  ],
+  "images": [
+    "https://damangroup.com.au/img/carousel-1.jpg",
+    "https://damangroup.com.au/img/icon-deal.png",
+    "https://damangroup.com.au/img/carousel-2.jpg",
+    "https://damangroup.com.au/img/icon-apartment.png",
+    "https://damangroup.com.au/img/icon-villa.png",
+    "https://damangroup.com.au/img/icon-house.png",
+    "https://damangroup.com.au/img/icon-building.png",
+    "https://damangroup.com.au/img/icon-neighborhood.png",
+    "https://damangroup.com.au/img/icon-housing.png",
+    "https://damangroup.com.au/img/icon-condominium.png",
+    "https://damangroup.com.au/img/icon-luxury.png",
+    "https://damangroup.com.au/img/about.jpeg",
+    "https://damangroup.com.au/img/property-1.jpg",
+    "https://damangroup.com.au/img/property-2.jpg",
+    "https://damangroup.com.au/img/property-4.jpg",
+    "https://damangroup.com.au/img/property-3.jpg",
+    "https://damangroup.com.au/img/property-5.jpg",
+    "https://damangroup.com.au/img/property-6.jpg",
+    "https://damangroup.com.au/img/call-to-action.jpg",
+    "https://damangroup.com.au/img/1.jpg",
+    "https://damangroup.com.au/img/2.jpg"
+  ],
+  "scripts": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js",
+    "https://code.jquery.com/jquery-3.4.1.min.js",
+    "https://damangroup.com.au/lib/wow/wow.min.js",
+    "https://damangroup.com.au/lib/easing/easing.min.js",
+    "https://damangroup.com.au/lib/owlcarousel/owl.carousel.min.js",
+    "https://damangroup.com.au/lib/waypoints/waypoints.min.js",
+    "https://damangroup.com.au/js/main.js"
+  ]
+}

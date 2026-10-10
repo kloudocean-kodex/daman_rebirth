@@ -18,6 +18,20 @@ npm run dev
 
 No runtime environment variables are required. Contact paths are `tel:` and `mailto:` links; add a server-side lead endpoint before replacing them with a web form.
 
+## Hero film
+
+The hero uses a silent, 26-second H.264 concept film covering six services, with camera drift and soft dissolves rendered from original AI-generated artwork. It is illustrative imagery, not real Daman project footage or AI-generated moving fabric. Desktop and portrait mobile versions are committed in `public/assets`, so Cloudflare Pages does not need a video service or encoder.
+
+Playback is muted and inline, with a pause/play button, still-image fallback, and automatic pausing offscreen or in a hidden tab. Reduced-motion and data-saving preferences prevent the video from being mounted or downloaded.
+
+To regenerate with an installed FFmpeg executable:
+
+```bash
+node scripts/render-hero-video.mjs
+```
+
+Set `FFMPEG_PATH` if FFmpeg is not on your PATH. See [docs/HERO-VIDEO.md](docs/HERO-VIDEO.md) for provenance and validation.
+
 ## Audit and research
 
 See [docs/SITE-AUDIT-AND-RESEARCH.md](docs/SITE-AUDIT-AND-RESEARCH.md) for the captured public-site inventory, source record, claims policy, content decisions, and handoff gates.

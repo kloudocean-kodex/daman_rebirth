@@ -7,7 +7,8 @@ export default function HeroVideo() {
   const videoRef = useRef(null);
   const [motionAllowed, setMotionAllowed] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [inView, setInView] = useState(true);
+  const [inView, setInView] = useState(false);
+  const [seenHero, setSeenHero] = useState(false);
   const [pageVisible, setPageVisible] = useState(true);
   const [wantsPlay, setWantsPlay] = useState(true);
   const [playing, setPlaying] = useState(false);
@@ -30,7 +31,10 @@ export default function HeroVideo() {
     mobilePreference.addEventListener('change', updatePreferences);
     connection?.addEventListener('change', updatePreferences);
     document.addEventListener('visibilitychange', updateVisibility);
-    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0 });
+    const observer = new IntersectionObserver(([entry]) => {
+      setInView(entry.isIntersecting);
+      if (entry.isIntersecting) setSeenHero(true);
+    }, { threshold: 0 });
     observer.observe(containerRef.current);
     return () => {
       motionPreference.removeEventListener('change', updatePreferences);
@@ -68,7 +72,7 @@ export default function HeroVideo() {
           <source media="(max-width: 760px)" srcSet="/assets/daman-hero-mobile-poster.jpg" />
           <img className="hero__poster" src="/assets/daman-hero-desktop-poster.jpg" alt="Sunlit contemporary living room with sheer curtains; illustrative concept imagery" width="1600" height="900" fetchPriority="high" />
         </picture>
-        {motionAllowed && !failed && (
+        {motionAllowed && seenHero && !failed && (
           <video
             key={mobile ? 'mobile' : 'desktop'}
             ref={videoRef}
@@ -90,10 +94,10 @@ export default function HeroVideo() {
           />
         )}
       </div>
-      {motionAllowed && !failed && (
+      {motionAllowed && seenHero && !failed && (
         <p className="hero__film-caption" aria-hidden="true"><span>0{chapter + 1} / 06</span>{chapters[chapter]}</p>
       )}
-      {motionAllowed && !failed && (
+      {motionAllowed && seenHero && !failed && (
         <button className="hero__motion-toggle" type="button" onClick={togglePlayback} aria-controls="hero-film" aria-label={playing ? 'Pause background video' : 'Play background video'}>
           <svg viewBox="0 0 20 20" aria-hidden="true">{playing ? <path d="M7 5v10M13 5v10" fill="none" stroke="currentColor" strokeWidth="1.5" /> : <path d="m7 4 9 6-9 6Z" fill="currentColor" />}</svg>
           <span>{playing ? 'Pause film' : 'Play film'}</span>

@@ -32,8 +32,12 @@ node scripts/render-hero-video.mjs
 
 Set `FFMPEG_PATH` if FFmpeg is not on your PATH. See [docs/HERO-VIDEO.md](docs/HERO-VIDEO.md) for provenance and validation.
 
+Eight genuine-motion originals, including the alternative sheer take and clearer-motion fly-screen retake, are retained separately in `media/generated`; they have not replaced the still-artwork hero. Flow is the user's preferred sheer take, not an extra duplicate chapter. Adobe usage reconciles to 760 existing included credits with 240 remaining; no purchase was made. The six selected clips were imported into Adobe's timeline, and a native rough-cut export is preserved. Its six source ingredients survive in embedded Content Credentials, but the editor signature has a trust-list warning and the 44.6 MB export exceeds the Pages asset limit. It is not a finished public hero. With FFmpeg and C2PA Tool installed, `npm run media:audit` verifies source hashes, full video decoding, duration and embedded credentials; add `-- --trust` to check the official C2PA trust list. Set `FFMPEG_PATH` and `C2PATOOL_PATH` as needed. See the [release audit](docs/RELEASE-AUDIT-2026-10-10.md) for exact status and the remaining cinematic-production gates.
+
 ## Audit and research
 
 See [docs/SITE-AUDIT-AND-RESEARCH.md](docs/SITE-AUDIT-AND-RESEARCH.md) for the captured public-site inventory, source record, claims policy, content decisions, and handoff gates.
 
 The [visual refinement record](docs/ANTIGRAVITY-AND-VISUAL-REFINEMENT.md) covers selected Antigravity concept assets, new original before/after imagery, the comparison interaction, and free-only generated-video limitations. The [Cloudflare repair record](docs/CLOUDFLARE-REPAIR.md) separates saved settings, deployments and actual browser verification.
+
+The [material and fold research](docs/MATERIAL-AND-FOLD-RESEARCH.md) supports the new original textile study, indicative colour notes and construction guide. Educational Roman/roller/curtain distinctions do not invent an unverified Daman range.

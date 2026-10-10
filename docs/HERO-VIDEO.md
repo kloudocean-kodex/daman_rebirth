@@ -36,6 +36,8 @@ All shots: photoreal architectural editorial cinema, restrained grade, no people
 
 ## Interaction direction
 
+Genuine-motion originals are preserved under `media/generated` for all six services, plus an eight-second watermarked 720p Flow sheer alternative. They are not yet the public hero. The user prefers Flow; the Adobe and Flow takes share a reference but are different videos, and only one sheer take belongs in the final sequence. Blinds lower, opaque curtains close, and the security door opens despite near-static directions; they are concepts, not product-operation or motorisation proof. The first fly-screen take is too subtle; a four-second 80-credit retake was submitted. Initial Adobe usage was 680/1000 existing credits before that retake, not a purchase. Original C2PA/SynthID provenance validates against the official trust list and must survive the production editing workflow; plain FFmpeg recompression is not a credentials-preserving export. See `media/generated/PROVENANCE.md` for measured integrity, actual credit reconciliation, quality findings and remaining gates.
+
 The daylight study is an explicitly labelled **mood illustration**, not a light-transmission or energy-efficiency simulator. It lets visitors adjust a room atmosphere with an accessible native range input; the scene changes instantly without scroll hijacking, heavy WebGL or a third-party tracking dependency. Reduced-motion preferences still apply to the site.
 
 The collection now separates all six confirmed core services. Gallery-only “Roller Curtains” remains unconfirmed and is not introduced as a seventh offer.
@@ -49,6 +51,14 @@ The collection now separates all six confirmed core services. Gallery-only “Ro
 - Two untracked videos, `hero-curtains.mp4` and `hero-sunlight.mp4`, appeared during work. They were not created by this renderer, their provenance is unknown, and they are neither referenced nor included in the commit.
 
 ## Browser QA
+
+### Latest genuine-motion checkpoint — 10 October 2026
+
+The fly-screen retake is saved and has visibly stronger foliage/camera movement. Adobe's last verified balance is 240/1000, with 760 included credits used and no purchase. The user successfully imported the preferred Flow sheers and five selected Adobe service clips into the existing timeline; the excluded Adobe sheer comparison and first fly-screen take are not in the edit.
+
+The user's native 1080p/High export is preserved as `media/generated/adobe-timeline-roughcut-test-1080p.mp4`: 44,627,555 bytes, 839 decoded frames, 24 fps, 1920 × 1080, approximately 34.96 seconds, with AAC audio. Its nine embedded manifests include six component ingredients and an Adobe Firefly Video Editor signature. Ingredient hashes and the export signature validate cryptographically, but the official C2PA trust-list check reports `signingCredential.untrusted` for the editor. Do not describe this as a clean trusted-identity result. The unchanged original clips still pass the official-list check without issues.
+
+This export is a rough cut, not the public hero. It exceeds the [25 MiB Pages asset limit](https://developers.cloudflare.com/pages/platform/limits/), has not received complete normal-speed temporal/loop/framing approval, and its Flow source remains 720p even inside a 1080p export. The source/credential evidence is preserved outside the production build. See the release audit for a quality-first completion plan; never silently strip provenance or claim that an upscale creates missing source detail.
 
 The initial single-scene version passed Edge playback, pause, keyboard resume and mobile source-selection checks. Reduced-motion emulation verified zero mounted videos and zero MP4 resource requests. It is superseded by the six-chapter edit; final checks are recorded separately in the deployment record, not inferred from those initial results.
 

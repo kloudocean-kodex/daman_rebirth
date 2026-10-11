@@ -1,0 +1,830 @@
+{
+  "date": "2026-10-11",
+  "url": "https://daman-rebirth.pages.dev/",
+  "codeCommit": "f5bdf4b9148ed1a4a4763b5369a92189502315be",
+  "deployment": "8f794725-705b-4f7b-81c9-3bcd771a755c",
+  "anchors": [
+    {
+      "width": 390,
+      "selector": ".skip-link",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".site-header > .wordmark",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": "#main-navigation a",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": "#main-navigation a",
+      "index": 1,
+      "href": "#edit",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "edit",
+      "hash": "#edit",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": "#main-navigation a",
+      "index": 2,
+      "href": "#approach",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "approach",
+      "hash": "#approach",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": "#main-navigation a",
+      "index": 3,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".header-cta",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".round-link",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".hero__scroll",
+      "index": 0,
+      "href": "#introduction",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "introduction",
+      "hash": "#introduction",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 0,
+      "href": "#contact",
+      "context": "Let’s talk about Sheer Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Sheer%20Curtains%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 1,
+      "href": "#contact",
+      "context": "Let’s talk about Plantation Shutters",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Plantation%20Shutters%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 2,
+      "href": "#contact",
+      "context": "Let’s talk about Blinds",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Blinds%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 3,
+      "href": "#contact",
+      "context": "Let’s talk about Security Doors",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Security%20Doors%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 4,
+      "href": "#contact",
+      "context": "Let’s talk about Fly Screens",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Fly%20Screens%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".service-card a",
+      "index": 5,
+      "href": "#contact",
+      "context": "Let’s talk about Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Curtains%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".light-study__link",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".material-study__link",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": "footer > .wordmark",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".footer__links a",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".footer__links a",
+      "index": 1,
+      "href": "#approach",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "approach",
+      "hash": "#approach",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "selector": ".footer__links a",
+      "index": 2,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".skip-link",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".site-header > .wordmark",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": "#main-navigation a",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": "#main-navigation a",
+      "index": 1,
+      "href": "#edit",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "edit",
+      "hash": "#edit",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": "#main-navigation a",
+      "index": 2,
+      "href": "#approach",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "approach",
+      "hash": "#approach",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": "#main-navigation a",
+      "index": 3,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".header-cta",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".round-link",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".hero__scroll",
+      "index": 0,
+      "href": "#introduction",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "introduction",
+      "hash": "#introduction",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 0,
+      "href": "#contact",
+      "context": "Let’s talk about Sheer Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Sheer%20Curtains%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 1,
+      "href": "#contact",
+      "context": "Let’s talk about Plantation Shutters",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Plantation%20Shutters%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 2,
+      "href": "#contact",
+      "context": "Let’s talk about Blinds",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Blinds%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 3,
+      "href": "#contact",
+      "context": "Let’s talk about Security Doors",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Security%20Doors%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 4,
+      "href": "#contact",
+      "context": "Let’s talk about Fly Screens",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Fly%20Screens%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".service-card a",
+      "index": 5,
+      "href": "#contact",
+      "context": "Let’s talk about Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Curtains%20%E2%80%94%20Daman%20Group",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".light-study__link",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".material-study__link",
+      "index": 0,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": "footer > .wordmark",
+      "index": 0,
+      "href": "#top",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "top",
+      "hash": "#top",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".footer__links a",
+      "index": 0,
+      "href": "#collection",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "collection",
+      "hash": "#collection",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".footer__links a",
+      "index": 1,
+      "href": "#approach",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "approach",
+      "hash": "#approach",
+      "menu": "false",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "selector": ".footer__links a",
+      "index": 2,
+      "href": "#contact",
+      "context": "Begin with a conversation",
+      "email": "mailto:info@damangroup.com.au",
+      "focus": "contact",
+      "hash": "#contact",
+      "menu": "false",
+      "pass": true
+    }
+  ],
+  "serviceContexts": [
+    {
+      "width": 390,
+      "service": "Sheer Curtains",
+      "context": "Let’s talk about Sheer Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Sheer%20Curtains%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "service": "Plantation Shutters",
+      "context": "Let’s talk about Plantation Shutters",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Plantation%20Shutters%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "service": "Blinds",
+      "context": "Let’s talk about Blinds",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Blinds%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "service": "Security Doors",
+      "context": "Let’s talk about Security Doors",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Security%20Doors%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "service": "Fly Screens",
+      "context": "Let’s talk about Fly Screens",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Fly%20Screens%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 390,
+      "service": "Curtains",
+      "context": "Let’s talk about Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Curtains%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Sheer Curtains",
+      "context": "Let’s talk about Sheer Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Sheer%20Curtains%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Plantation Shutters",
+      "context": "Let’s talk about Plantation Shutters",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Plantation%20Shutters%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Blinds",
+      "context": "Let’s talk about Blinds",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Blinds%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Security Doors",
+      "context": "Let’s talk about Security Doors",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Security%20Doors%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Fly Screens",
+      "context": "Let’s talk about Fly Screens",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Fly%20Screens%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "service": "Curtains",
+      "context": "Let’s talk about Curtains",
+      "email": "mailto:info@damangroup.com.au?subject=Enquiry%20about%20Curtains%20%E2%80%94%20Daman%20Group",
+      "pass": true
+    }
+  ],
+  "controls": [
+    {
+      "control": "Soft light",
+      "heading": "Let daylight stay gentle.",
+      "image": "/assets/daman-open-living-concept.webp",
+      "pressed": "true"
+    },
+    {
+      "control": "Private retreat",
+      "heading": "Set the room apart.",
+      "image": "/assets/daman-shutters.webp",
+      "pressed": "true"
+    },
+    {
+      "control": "Open air",
+      "heading": "Keep the threshold open.",
+      "image": "/assets/daman-flyscreen.webp",
+      "pressed": "true"
+    },
+    {
+      "control": "Oat",
+      "note": "Oat A warm, pale starting point. Pair gentle woven texture with timber and stone.",
+      "pressed": "true"
+    },
+    {
+      "control": "Mushroom",
+      "note": "Mushroom A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.",
+      "pressed": "true"
+    },
+    {
+      "control": "Olive",
+      "note": "Olive An earthy accent. A deeper textile tone brings natural colour into a restrained room.",
+      "pressed": "true"
+    },
+    {
+      "control": "Espresso",
+      "note": "Espresso A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.",
+      "pressed": "true"
+    },
+    {
+      "control": "Ink",
+      "note": "Ink A cool, architectural contrast. Balance the depth with warm materials and natural light.",
+      "pressed": "true"
+    },
+    {
+      "control": "fold disclosure open",
+      "open": true
+    },
+    {
+      "control": "fold disclosure close",
+      "open": false
+    },
+    {
+      "control": "See the bare window",
+      "labels": [
+        {
+          "opacity": "1",
+          "text": "Before · The bare window"
+        },
+        {
+          "opacity": "0",
+          "text": "After · The considered finish"
+        }
+      ],
+      "value": "100"
+    },
+    {
+      "control": "See the finished room",
+      "labels": [
+        {
+          "opacity": "0",
+          "text": "Before · The bare window"
+        },
+        {
+          "opacity": "1",
+          "text": "After · The considered finish"
+        }
+      ],
+      "value": "0"
+    },
+    {
+      "control": ".room-reveal__slider",
+      "key": "Home",
+      "value": "0"
+    },
+    {
+      "control": ".room-reveal__slider",
+      "key": "ArrowRight",
+      "value": "1"
+    },
+    {
+      "control": ".room-reveal__slider",
+      "key": "End",
+      "value": "100"
+    },
+    {
+      "control": "#daylight",
+      "key": "Home",
+      "value": "0"
+    },
+    {
+      "control": "#daylight",
+      "key": "ArrowRight",
+      "value": "1"
+    },
+    {
+      "control": "#daylight",
+      "key": "End",
+      "value": "100"
+    },
+    {
+      "control": "menu Escape",
+      "expanded": "false",
+      "focus": "Toggle navigation"
+    },
+    {
+      "control": "menu outside pointer",
+      "expanded": "false"
+    },
+    {
+      "control": "film pause",
+      "paused": true,
+      "time": 25.774292
+    },
+    {
+      "control": "film resume",
+      "muted": true,
+      "paused": false,
+      "ready": 4,
+      "time": 26.052353
+    }
+  ],
+  "responsive": [
+    {
+      "broken": [],
+      "clientWidth": 305,
+      "height": 720,
+      "overflow": false,
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "broken": [],
+      "clientWidth": 360,
+      "height": 667,
+      "overflow": false,
+      "scrollWidth": 360,
+      "width": 375
+    },
+    {
+      "broken": [],
+      "clientWidth": 375,
+      "height": 844,
+      "overflow": false,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "clientWidth": 415,
+      "height": 932,
+      "overflow": false,
+      "scrollWidth": 415,
+      "width": 430
+    },
+    {
+      "broken": [],
+      "clientWidth": 585,
+      "height": 900,
+      "overflow": false,
+      "scrollWidth": 585,
+      "width": 600
+    },
+    {
+      "broken": [],
+      "clientWidth": 805,
+      "height": 1180,
+      "overflow": false,
+      "scrollWidth": 805,
+      "width": 820
+    },
+    {
+      "broken": [],
+      "clientWidth": 1009,
+      "height": 768,
+      "overflow": false,
+      "scrollWidth": 1009,
+      "width": 1024
+    },
+    {
+      "broken": [],
+      "clientWidth": 1425,
+      "height": 900,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "clientWidth": 1905,
+      "height": 1080,
+      "overflow": false,
+      "scrollWidth": 1905,
+      "width": 1920
+    },
+    {
+      "broken": [],
+      "clientWidth": 2545,
+      "height": 1080,
+      "overflow": false,
+      "scrollWidth": 2545,
+      "width": 2560
+    },
+    {
+      "broken": [],
+      "clientWidth": 829,
+      "height": 390,
+      "overflow": false,
+      "scrollWidth": 829,
+      "width": 844
+    }
+  ],
+  "fontRequests": [
+    "https://daman-rebirth.pages.dev/fonts/manrope-normal-400-600-a30ddcd3.woff2",
+    "https://daman-rebirth.pages.dev/fonts/playfair-display-normal-500-600-e0c764a8.woff2",
+    "https://daman-rebirth.pages.dev/fonts/playfair-display-italic-500-600-54af24bd.woff2",
+    "https://daman-rebirth.pages.dev/fonts/fonts.css",
+    "https://daman-rebirth.pages.dev/fonts/dm-mono-normal-500-9964608a.woff2",
+    "https://daman-rebirth.pages.dev/fonts/dm-mono-normal-400-e1896b13.woff2"
+  ],
+  "httpResponseErrors": [],
+  "scope": "Browser viewport emulation and real public deployment, not physical-device or formal performance certification."
+}

@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-11",
+  "scope": "Always-visible finish notes only",
+  "url": "http://127.0.0.1:5191",
+  "viewports": [
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 720,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 147.28125,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 148.28125,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 320,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 667,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 375,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 844,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 932,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 430,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 900,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 109.890625,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 600,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 1180,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 820,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 768,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 1024,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 900,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 109.890625,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 1080,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 91.8359375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 92.8359375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 92.8359375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 1920,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 1080,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 91.8359375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 92.8359375,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 92.8359375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 2560,
+      "pass": true
+    },
+    {
+      "disclosureControls": 0,
+      "headingLevel": "H3",
+      "height": 390,
+      "notes": [
+        {
+          "display": "grid",
+          "height": 128.5859375,
+          "name": "Curtain waves",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 110.890625,
+          "name": "Roller blinds",
+          "opacity": "1",
+          "overflow": false
+        },
+        {
+          "display": "grid",
+          "height": 129.5859375,
+          "name": "Roman folds",
+          "opacity": "1",
+          "overflow": false
+        }
+      ],
+      "overflow": false,
+      "width": 844,
+      "pass": true
+    }
+  ],
+  "tones": [
+    {
+      "name": "Oat",
+      "pass": true
+    },
+    {
+      "name": "Mushroom",
+      "pass": true
+    },
+    {
+      "name": "Olive",
+      "pass": true
+    },
+    {
+      "name": "Espresso",
+      "pass": true
+    },
+    {
+      "name": "Ink",
+      "pass": true
+    }
+  ],
+  "keyboard": {
+    "href": "#contact",
+    "tag": "A",
+    "text": "Find the right finish for your home ↗"
+  },
+  "enquiry": {
+    "focus": "contact",
+    "hash": "#contact"
+  },
+  "localPreview": "Vite production preview; not a Pages media-gateway test",
+  "capture": "finish-visible-local-mobile-2026-10-11.jpg",
+  "captureViewport": {
+    "width": 390,
+    "height": 1000
+  },
+  "captureNote": "Native-scroll screenshot mismatch was rejected and replaced with a inspected correctly framed capture."
+}

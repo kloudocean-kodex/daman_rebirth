@@ -84,10 +84,10 @@ export default function MaterialStudy() {
           {tones.map((tone) => <button type="button" key={tone.name} aria-pressed={selectedTone.name === tone.name} aria-controls="material-preview material-preview-note" onClick={() => selectTone(tone)}><span style={{ '--swatch-colour': tone.colour }} /><span>{tone.name}</span></button>)}
         </div>
         <p className="material-study__tone" id="material-preview-note" aria-live="polite"><strong>{selectedTone.name}</strong> {selectedTone.note}</p>
-        <details className="material-study__folds">
-          <summary><span className="material-study__fold-title">The shape of a finish<span>Curtain waves · Blind forms</span></span><span className="material-study__fold-toggle" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M4 10h12" /><path className="material-study__fold-toggle-vertical" d="M10 4v12" /></svg></span></summary>
-          <div className="material-study__fold-content">{folds.map((fold) => <article key={fold.type}><FoldMark type={fold.type} /><div><h3>{fold.name}</h3><p>{fold.copy}</p></div></article>)}</div>
-        </details>
+        <div className="material-study__folds">
+          <div className="material-study__fold-header"><h3>The shape of a finish</h3><p>Curtain waves · Blind forms</p></div>
+          <div className="material-study__fold-content">{folds.map((fold) => <article key={fold.type}><FoldMark type={fold.type} /><div><h4>{fold.name}</h4><p>{fold.copy}</p></div></article>)}</div>
+        </div>
         <p className="material-study__disclaimer">Design inspiration, not a confirmed Daman range. Ask about available fabrics, headings and blind styles. Always judge colour from a physical sample in your room.</p>
         <a className="material-study__link" href="#contact">Find the right finish for your home <span aria-hidden="true">↗</span></a>
       </div>

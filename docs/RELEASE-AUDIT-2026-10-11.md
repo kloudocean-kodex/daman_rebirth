@@ -60,3 +60,23 @@ Existing approved Adobe/Flow material already meets the aesthetic direction. Gen
 ## Deployment checkpoint
 
 `9eb83f2` deployed successfully at `20fd68f4-844e-4df3-9813-26831a4365bc`; its public HTML matched the compiled `index-DXBoSfxS.js` / `index-BJ5mEi3j.css` bundles. The public MP4's full SHA-256 matched the unchanged native export. Range probes exposed the platform limitation described above. The narrower range-gateway release and final live browser checks follow in the next checkpoint; this first success alone does not close them.
+
+## Verified live range-gateway checkpoint
+
+Cloudflare's logged-in dashboard exposed the actual failed-build cause: its Wrangler 3.114.17 Functions compiler did not understand the JSON import attribute. Commit `12b4a3eade5a6dbdd9f2ce22a3843df41ef4c744` replaces only that import syntax. Both the exact CI compiler version and local Wrangler 4.149.0 compile it successfully; lint, frontend build, diff checks and the native-film audit pass. No hosting, billing, DNS, permission or credential change was required.
+
+The main-branch Git deployment completed successfully at `4be7a542-c051-4dfa-a90f-732935bca810`. Public HTML matches `index-0ODfnPnt.js` / `index-BJ5mEi3j.css`. The live gateway returns exact 206 prefix, tail and suffix bytes, HEAD 200, ETag conditional 304, unsatisfiable-range 416 and method 405. Its complete 25,642,239-byte response has the same SHA-256 as the unchanged native export. The repeated native audit decodes all 839 frames and confirms zero audio tracks, six selected components and the previously disclosed editor certificate-trust warning.
+
+Fresh Edge checks on `https://daman-rebirth.pages.dev/` verify:
+
+- First-visit grey/gold D-and-dot intro is visible, then clears; normal same-tab reload and reduced-motion reload do not leave an overlay stuck. The implemented maximum wait remains a code bound, not a measured guarantee that all website assets have loaded.
+- The actual `/media/showreel-20261011` movie plays muted, decodes 1280 × 720 and reports 34.958333 seconds. Tablet playback is observed at 34.905879 seconds; subsequent playback continues at a lower timestamp with `loop: true`, no error and `paused: false`. Captured browser responses show 206 for the film; that normal-playback event capture was truncated, so it is not used to claim a complete network inventory. Exact range integrity is established by the separate complete HTTP tests.
+- Verified viewport widths 320, 390, 820, 1024 and 1440 have no horizontal document or header overflow, one H1 and one movie source. No completed image is broken. The full-frame phone film remains above the headline instead of being portrait-cropped.
+- Pause/resume controls work. Mobile navigation expands, Escape closes it, focus returns to its toggle and closed navigation is inert. The film pauses when actually scrolled offscreen.
+- Room comparison and daylight controls reach 0/100 using Home/End. After the automated scroll settles, Olive selects its original inspiration copy and the fold disclosure opens. Telephone and email destinations match the published business contacts; this does not prove message delivery.
+- Reduced-motion reload mounts zero videos and requests zero film endpoints in an untruncated request capture. Blocking the film endpoint removes the failed movie and its unusable controls while preserving the decoded poster; the intro does not remain stuck. Temporary network/media/viewport test overrides are removed after QA.
+- Normal-playback console capture contains no warnings or errors. This excludes the deliberately blocked-video test and is not a universal error-free or all-device claim.
+
+Visually inspected evidence is saved under `docs/qa/`: `live-brand-intro-2026-10-11.jpg`, `live-native-showreel-desktop-2026-10-11.jpg`, `live-native-showreel-mobile-2026-10-11.jpg`, `live-native-showreel-tablet-2026-10-11.jpg`, `live-materials-mobile-2026-10-11.jpg` and `live-poster-fallback-mobile-2026-10-11.jpg`. These screenshots show this native-film release, unlike the retained earlier still-film captures.
+
+The owner is reviewing alternatives to the existing headline; no copy change is made without a selection. Remaining work is the physical-device and formal performance/accessibility checks, owner confirmation of real product ranges/address, and separately approved original-domain cutover described above. Native 720p and the film's file size remain delivery trade-offs, not an assertion of flawless 4K or slow-network playback.

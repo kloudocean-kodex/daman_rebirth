@@ -37,3 +37,13 @@ Commit `59e2fd1e4e683b5edaa2b3d78de35317c60f37e0` received a successful Pages ch
 Desktop hero playback decoded 1600 × 900 frames from the 26-second desktop MP4. At 390 × 844, the dedicated mobile MP4 decoded 720 × 1280 frames and played; document width was exactly 390 px. Mobile navigation opened and closed. Live comparison keyboard Home/End produced 0/100; PageDown moved the divider, and the endpoint buttons selected the finished/bare room. Both desktop and mobile comparison alignment were visually inspected. Device overrides were cleared afterward.
 
 Public screenshots: `qa/live-hero-latest-desktop.jpg`, `qa/live-hero-latest-mobile.jpg`, `qa/live-room-reveal-latest-desktop.jpg`, `qa/live-room-reveal-latest-mobile.jpg`. These prove the named release, not a future deployment or a physical-device test.
+
+## Native showreel delivery repair — 11 October 2026
+
+The dashboard log for failed deployment `b129e906-543f-408a-8c89-8845ec02d807` confirmed that Pages used Wrangler 3.114.17, despite the repository's newer local development dependency. Its Functions compiler rejected the JSON import attribute with `Expected ";" but found "with"`. The frontend build itself passed. No account, DNS, billing or security setting caused or was changed by this repair.
+
+Commit `12b4a3eade5a6dbdd9f2ce22a3843df41ef4c744` removes that import attribute while retaining the same provenance ledger and film. Compilation passes with both Wrangler 3.114.17 and 4.149.0. Git-triggered production deployment `4be7a542-c051-4dfa-a90f-732935bca810` completed successfully. Public HTML matches `index-0ODfnPnt.js` and `index-BJ5mEi3j.css`.
+
+The public `/media/showreel-20261011` endpoint now returns correct 206 prefix, tail and suffix responses whose bytes match the native Adobe export. HEAD 200, conditional 304, unsatisfiable-range 416 and unsupported-method 405 pass. A complete public streamed response has 25,642,239 bytes and SHA-256 `B1D980E7570195A599EA25F13B2FEBB1FE2AD18544CB7678890F291D0880F70F`. The film is unchanged, has no audio stream and retains its Content Credentials, including the separately disclosed editor certificate-trust warning.
+
+Only that film route invokes the Function; the website remains statically served elsewhere. The previous working deployment remained live while the failed builds were investigated. The main-branch Git integration is still the deployment mechanism; no manual bypass, purchase, domain cutover or credential expansion was needed. See `RELEASE-AUDIT-2026-10-11.md` for browser checks and remaining launch boundaries.

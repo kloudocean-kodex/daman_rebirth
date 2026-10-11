@@ -1,0 +1,36 @@
+{
+  "url": "https://daman-rebirth.pages.dev/#materials",
+  "implementationCommit": "87bebe2",
+  "deployment": {
+    "id": "a63525fc-b6af-4557-95be-9c029f3ee25b",
+    "status": "success"
+  },
+  "viewports": [
+    {
+      "size": "390x1000",
+      "finishControls": 0,
+      "visibleNotes": ["Curtain waves", "Roller blinds", "Roman folds"],
+      "horizontalOverflow": false
+    },
+    {
+      "size": "1440x1000",
+      "finishControls": 0,
+      "visibleNotes": ["Curtain waves", "Roller blinds", "Roman folds"],
+      "horizontalOverflow": false
+    }
+  ],
+  "toneAssets": {
+    "verified": ["Oat", "Mushroom", "Olive", "Espresso", "Ink"],
+    "result": "Each selected tone settled on its matching decoded versioned WebP asset."
+  },
+  "enquiryLink": {
+    "hash": "#contact",
+    "focus": "contact",
+    "result": "pass"
+  },
+  "visualEvidence": [
+    "docs/qa/finish-visible-live-mobile-detail-2026-10-11.jpg",
+    "docs/qa/finish-visible-live-desktop-detail-2026-10-11.jpg"
+  ],
+  "knownBoundary": "Browser viewport checks do not certify physical iOS Safari, Android browsers, assistive technology or all network conditions."
+}

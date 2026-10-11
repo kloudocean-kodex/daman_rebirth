@@ -21,6 +21,11 @@ Only `src/MaterialStudy.jsx` and its fold-specific rules in `src/material-study.
 
 Local evidence: `docs/qa/finish-visible-local-2026-10-11.json` and `docs/qa/finish-visible-local-mobile-2026-10-11.jpg`. Vite preview validation is specific to these static notes and colour controls, not a new test of the unchanged Pages media gateway.
 
-## Release gate
+## Public release verification
 
-Public deployment and responsive browser verification follow this implementation commit. Physical Safari/iOS/Android and formal assistive-technology coverage remain separate pending checks; viewport emulation is not universal device certification.
+- Cloudflare Pages completed deployment `a63525fc-b6af-4557-95be-9c029f3ee25b` for implementation commit `87bebe2` successfully. The public site was tested at `https://daman-rebirth.pages.dev/#materials`.
+- At 390×1000 and 1440×1000, all three notes are visible without action; there are zero `details`, `summary` or button controls in the finish-notes component and no document horizontal overflow.
+- All five tone selections settled on their matching decoded, versioned image assets. The finish enquiry link changed the URL to `#contact` and placed focus on Contact.
+- Visual evidence: `docs/qa/finish-visible-live-mobile-detail-2026-10-11.jpg` and `docs/qa/finish-visible-live-desktop-detail-2026-10-11.jpg`.
+
+Physical Safari/iOS/Android and formal assistive-technology coverage remain separate pending checks; browser viewport emulation is not universal device certification.

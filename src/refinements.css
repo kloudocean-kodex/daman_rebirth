@@ -1,0 +1,21 @@
+:root { --muted: #68645c; }
+.site-shell section[id] { scroll-margin-top: 100px; }
+a, button, input, summary { scroll-margin-top: 100px; scroll-margin-bottom: 32px; }
+.desktop-nav a, .header-cta, .footer__links a { display: flex; align-items: center; min-height: 44px; }
+.header-cta__short { display: none; }
+.service-card a { width: 44px; height: 44px; opacity: 1; transform: none; }
+.assurance__grid > div > span { color: #786348; }
+.room-reveal__label--inactive { opacity: 0; }
+.room-reveal__label { pointer-events: none; transition: opacity .2s; }
+.room-reveal__actions button[aria-pressed="true"] { border-color: #786348; }
+.light-study__link, .contact__button, .contact__details > a { min-height: 44px; align-items: center; }
+.material-study__hint { margin: 22px 0 -16px; }
+.material-study__copy > .material-study__hint { font-size: 10px; }
+
+@media (max-width: 760px) {
+  .header-cta__full { display: none; }
+  .header-cta__short { display: inline; }
+  .site-header .header-cta { padding-inline: 8px; font-size: 11px; white-space: nowrap; }
+  .site-header--scrolled .desktop-nav { top: 64px; }
+  .room-reveal__label { max-width: calc(50% - 20px); }
+}

@@ -8,3 +8,9 @@
 
 /assets/daman-showreel-poster.jpg
   Cache-Control: public, max-age=86400
+
+/fonts/fonts.css
+  Cache-Control: public, max-age=86400
+
+/fonts/*.woff2
+  Cache-Control: public, max-age=31536000, immutable

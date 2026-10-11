@@ -78,7 +78,7 @@ export async function onRequest(context) {
   headers.delete('Keep-Alive');
   const etag = headers.get('ETag');
   const validators = request.headers.get('If-None-Match')?.split(',').map(value => value.trim());
-  if (validators?.some(value => value === '*' || value === etag)) {
+  if (validators?.some(value => value === '*' || value.replace(/^W\//, '') === etag.replace(/^W\//, ''))) {
     await asset.body.cancel();
     headers.delete('Content-Length');
     return new Response(null, { status: 304, headers });

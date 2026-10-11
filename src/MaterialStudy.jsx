@@ -37,7 +37,8 @@ export default function MaterialStudy() {
         <p className="eyebrow">Material notes</p>
         <h2 id="materials-title">Texture first.<br /><em>Colour, considered.</em></h2>
         <p>Quiet woven surfaces. Deeper earth tones. The smallest material decision can change the whole conversation of a room.</p>
-        <div className="material-study__swatches" role="group" aria-label="Explore colour inspiration">
+        <p className="material-study__hint" id="tone-help">Select a tone. Discover its mood.</p>
+        <div className="material-study__swatches" role="group" aria-label="Explore colour inspiration" aria-describedby="tone-help">
           {tones.map((tone) => <button type="button" key={tone.name} aria-pressed={selectedTone.name === tone.name} onClick={() => setSelectedTone(tone)}><span style={{ '--swatch-colour': tone.colour }} /><span>{tone.name}</span></button>)}
         </div>
         <p className="material-study__tone" aria-live="polite"><strong>{selectedTone.name}</strong> {selectedTone.note}</p>

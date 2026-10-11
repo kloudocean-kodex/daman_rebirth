@@ -38,6 +38,8 @@ With FFmpeg and C2PA Tool installed, `npm run media:audit` audits the eight sour
 
 The champagne-gold D-and-dot intro is a lightweight SVG/CSS interpretation of the supplied logos. It waits only for the critical poster/fonts, exits within 1.4 seconds plus its fade, skips repeat tab-session visits/reduced motion, and never traps focus or waits for the whole MP4. Original logo references are preserved in `docs/branding`.
 
+Pages' static server currently ignores HTTP Range. Production playback therefore uses the versioned `/media/showreel-20261011` streaming Function, preserving exact signed native bytes and serving proper 206 ranges. Only that route invokes Functions; other pages/assets stay static. It uses the existing Workers allowance, not a newly purchased plan. Vite development uses the direct MP4; use `npx wrangler pages dev dist` after a build to verify the real gateway locally. `wrangler.jsonc` preserves the existing `dist` output directory and contains no credentials.
+
 ## Audit and research
 
 See [docs/SITE-AUDIT-AND-RESEARCH.md](docs/SITE-AUDIT-AND-RESEARCH.md) for the captured public-site inventory, source record, claims policy, content decisions, and handoff gates.

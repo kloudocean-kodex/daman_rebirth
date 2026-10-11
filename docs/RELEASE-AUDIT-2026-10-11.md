@@ -19,7 +19,9 @@ The brand welcome is **not a barrier waiting for the entire website**. It dismis
 
 Below-fold photography stays independent from the intro. The poster is preloaded/high-priority; the movie is not preloaded before the motion preference and visibility checks. Fonts are requested in the head with preconnect and `display=swap`, rather than through a serial CSS `@import`. A loader cannot guarantee that later network requests will succeed; resilient independent loading is the intended architecture.
 
-The MP4's `moov` box is at the end, as supplied by Adobe. Moving it with a plain remux would destroy embedded credentials. Efficient startup therefore relies on HTTP byte-range delivery, to be verified on Pages. The film remains relatively heavy at 24.45 MiB; this is a native-quality/provenance compromise, not a claim of ideal low-bandwidth performance. A future smaller credential-preserving export or separately approved media hosting is an optimisation, not a prerequisite to showing the poster or using the page.
+The MP4's `moov` box is at the end, as supplied by Adobe. Moving it with a plain remux would destroy embedded credentials. Live probes found that Pages' static asset endpoint ignores Range and returns the entire file with status 200, consistent with [Cloudflare's documented Pages behaviour](https://developers.cloudflare.com/pages/configuration/serving-pages/). A narrowly scoped Pages Function at `/media/showreel-20261011` therefore streams exact native byte ranges using `ASSETS` and `FixedLengthStream`, without buffering the full file, altering media or creating a second video. Its explicit `_routes.json` invokes Functions only on that endpoint; the website and other assets remain static.
+
+The gateway implements GET/HEAD, valid prefix/open/suffix ranges, 206/416, ETag/If-Range and conditional 304, and 405 for other methods. A versioned endpoint avoids stale-film reuse on future edits. Requests count against the account's existing Workers/Pages Functions allowance; [the Free plan has a shared daily quota](https://developers.cloudflare.com/pages/functions/pricing/), not unlimited function calls. No paid plan or storage service was purchased or enabled. If film delivery fails, the page remains usable with its poster. The film is still relatively heavy at 24.45 MiB; a future smaller credential-preserving export can improve slow-network performance. This is not an ideal-low-bandwidth or universal-flawlessness claim.
 
 ## Verified locally
 
@@ -34,6 +36,7 @@ The MP4's `moov` box is at the end, as supplied by Adobe. Moving it with a plain
 - Blocked-MP4 reload: decoded poster remains, movie and non-working playback controls disappear; intro does not remain stuck. Temporary blocking and media overrides were removed.
 - Native browser playback reaches `ended: true` at 34.958333 seconds, with decoded 1280 × 720 frames and no video error. Local HTTP tail-range request returns 206 and the correct 13,762-byte range, allowing the browser to retrieve end-of-file metadata without a full-file startup fetch.
 - `npm audit --omit=dev`: zero reported production dependency vulnerabilities. This is not a complete security assessment.
+- Streaming gateway: Wrangler 4.149.0 compilation and local Workers runtime pass. Range parser/cross-chunk checks pass; actual prefix/tail/suffix responses equal the exact corresponding native bytes. Full streamed response SHA-256 matches the original. HEAD, ETag 304, invalid-range 416 and method 405 are verified. No dependency or input-driven external fetch target is used by the gateway.
 
 ## Research informing the implementation
 
@@ -56,4 +59,4 @@ Existing approved Adobe/Flow material already meets the aesthetic direction. Gen
 
 ## Deployment checkpoint
 
-Pending this release's push, Pages result and live browser audit. The previous deployed release was `cc23aaf`; it used the older still-motion film. Do not infer a new public deployment from a local build.
+`9eb83f2` deployed successfully at `20fd68f4-844e-4df3-9813-26831a4365bc`; its public HTML matched the compiled `index-DXBoSfxS.js` / `index-BJ5mEi3j.css` bundles. The public MP4's full SHA-256 matched the unchanged native export. Range probes exposed the platform limitation described above. The narrower range-gateway release and final live browser checks follow in the next checkpoint; this first success alone does not close them.

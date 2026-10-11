@@ -69,7 +69,7 @@ export default function HeroVideo() {
             ref={videoRef}
             id="hero-film"
             className={`hero__video ${hasFrame ? 'hero__video--ready' : ''}`}
-            src="/assets/daman-showreel-web.mp4"
+            src={import.meta.env.DEV ? '/assets/daman-showreel-web.mp4' : '/media/showreel-20261011'}
             poster="/assets/daman-showreel-poster.jpg"
             muted
             playsInline

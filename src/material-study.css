@@ -1,11 +1,18 @@
 .material-study { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); background: #e4ded2; }
-.material-study__image { position: sticky; top: 80px; align-self: start; aspect-ratio: 3 / 2; margin: 0; overflow: hidden; background: #a9987f; }
-.material-study__image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.material-study__image { position: sticky; top: 100px; grid-column: 1; grid-row: 1 / 3; align-self: start; aspect-ratio: 3 / 2; margin: 0; overflow: hidden; background: #a9987f; }
+.material-study__image img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
+.material-study__current--reveal { animation: material-tone-reveal .4s ease both; }
+@keyframes material-tone-reveal { from { opacity: 0; } to { opacity: 1; } }
 .material-study__image figcaption { position: absolute; right: 22px; bottom: 22px; left: 22px; padding: 10px 12px; width: fit-content; max-width: calc(100% - 44px); background: rgba(29, 26, 20, .76); color: #fff; font: 400 9px/1.6 var(--mono); }
-.material-study__copy { align-self: center; min-width: 0; padding: 74px clamp(25px, 5vw, 90px); }
+.material-study__image figcaption strong, .material-study__image figcaption span { display: block; }
+.material-study__image figcaption strong { margin-bottom: 2px; font-weight: 500; }
+.material-study__intro, .material-study__choices { grid-column: 2; min-width: 0; padding-inline: clamp(25px, 5vw, 90px); }
+.material-study__intro { padding-top: 74px; }
+.material-study__choices { padding-bottom: 74px; }
 .material-study h2 { margin: 42px 0 24px; font: 500 clamp(39px, 4.2vw, 70px)/1.04 var(--serif); letter-spacing: -.05em; }
-.material-study__copy > p:not(.eyebrow) { max-width: 420px; color: #59564e; font-size: 12px; line-height: 1.8; }
-.material-study__swatches { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px; }
+.material-study__intro > p:not(.eyebrow), .material-study__choices > p { max-width: 420px; color: #59564e; font-size: 12px; line-height: 1.8; }
+.material-study__choices > .material-study__hint { margin: 22px 0 14px; font-size: 10px; }
+.material-study__swatches { display: flex; flex-wrap: wrap; gap: 16px; }
 .material-study__swatches button { display: grid; justify-items: center; gap: 10px; min-width: 52px; min-height: 78px; padding: 7px 2px; border: 0; background: transparent; color: var(--ink); cursor: pointer; font: 400 9px var(--mono); }
 .material-study__swatches button > span:first-child { width: 34px; height: 34px; border: 1px solid rgba(34, 30, 25, .18); border-radius: 50%; background: var(--swatch-colour); box-shadow: inset 0 0 0 3px #e4ded2; }
 .material-study__swatches button[aria-pressed="true"] > span:first-child { outline: 1px solid #6f6049; outline-offset: 4px; }
@@ -13,18 +20,28 @@
 .material-study__tone { min-height: 66px; margin: 20px 0 28px; }
 .material-study__tone strong { display: block; margin-bottom: 3px; color: var(--ink); font-weight: 500; }
 .material-study__folds { border-top: 1px solid #bdb3a3; border-bottom: 1px solid #bdb3a3; }
-.material-study summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 52px; cursor: pointer; list-style: none; font-size: 12px; }
+.material-study summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; min-height: 76px; padding: 14px 4px; cursor: pointer; list-style: none; font-size: 12px; transition: background-color .2s; touch-action: manipulation; }
 .material-study summary::-webkit-details-marker { display: none; }
-.material-study summary > span { font-size: 22px; font-weight: 300; transition: transform .2s; }
-.material-study details[open] summary > span { transform: rotate(45deg); }
+.material-study__fold-title { display: grid; gap: 6px; }
+.material-study__fold-title > span { color: #686157; font: 400 9px/1.5 var(--mono); }
+.material-study__fold-toggle { display: grid; place-items: center; flex: 0 0 36px; width: 36px; height: 36px; border: 1px solid #b1a48f; border-radius: 50%; color: #6f6049; transition: background-color .2s; }
+.material-study__fold-toggle svg { width: 20px; height: 20px; }
+.material-study__fold-toggle-vertical { transform-origin: 10px 10px; transition: transform .2s; }
+.material-study details[open] .material-study__fold-toggle-vertical { transform: scaleY(0); }
+.material-study details[open] .material-study__fold-toggle { background: #d7cebe; }
+.material-study__fold-content { padding-top: 8px; }
+.material-study__folds article + article { border-top: 1px solid #cbc2b2; }
+.material-study details[open] .material-study__fold-content { animation: material-tone-reveal .25s ease both; }
+@media (hover: hover) { .material-study summary:hover { background: rgba(111, 96, 73, .05); } .material-study summary:hover .material-study__fold-toggle { background: #d7cebe; } }
 .material-study__folds article { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 18px; padding: 15px 0 20px; }
-.material-study__folds svg { width: 54px; color: #766752; }
+.material-study__folds article > svg { width: 54px; color: #766752; }
 .material-study__folds h3 { margin: 3px 0 8px; font: 500 20px var(--serif); }
 .material-study__folds p { margin: 0; color: #59564e; font-size: 11px; line-height: 1.7; }
-.material-study__copy > .material-study__disclaimer { margin-top: 22px; font-size: 10px; line-height: 1.7; }
+.material-study__choices > .material-study__disclaimer { margin-top: 22px; font-size: 10px; line-height: 1.7; }
 .material-study__link { display: flex; justify-content: space-between; align-items: center; gap: 25px; width: fit-content; max-width: 100%; min-height: 44px; margin-top: 20px; border-bottom: 1px solid #9b8d77; font-size: 11px; }
-@media (max-width: 1000px) { .material-study__copy { padding: 58px 30px; } .material-study h2 { font-size: 44px; } .material-study__swatches { gap: 10px; } }
-@media (max-width: 760px) { .material-study { grid-template-columns: 1fr; } .material-study__image { position: relative; top: auto; aspect-ratio: 3 / 2; } .material-study__image figcaption { bottom: 12px; left: 12px; font-size: 8px; } .material-study__copy { padding: 64px 22px 74px; } .material-study h2 { font-size: clamp(38px, 10.7vw, 52px); } .material-study__swatches { gap: 13px; } .material-study__tone { min-height: 80px; } }
+@media (max-width: 1000px) { .material-study__intro, .material-study__choices { padding-inline: 30px; } .material-study__intro { padding-top: 58px; } .material-study__choices { padding-bottom: 58px; } .material-study h2 { font-size: 44px; } .material-study__swatches { gap: 10px; } }
+@media (max-width: 760px) { .material-study { grid-template-columns: 1fr; } .material-study__intro { grid-column: 1; grid-row: 1; padding: 58px 22px 22px; } .material-study__image { position: relative; top: auto; grid-column: 1; grid-row: 2; aspect-ratio: 3 / 2; } .material-study__image figcaption { bottom: 12px; left: 12px; font-size: 8px; } .material-study__choices { grid-column: 1; grid-row: 3; padding: 0 22px 64px; } .material-study h2 { margin-top: 28px; font-size: clamp(38px, 10.7vw, 52px); } .material-study__swatches { justify-content: space-between; gap: 6px; } .material-study__swatches button { min-width: 48px; } .material-study__tone { min-height: 80px; } }
+@media (prefers-reduced-motion: reduce) { .material-study__current--reveal, .material-study details[open] .material-study__fold-content { animation: none; } .material-study summary, .material-study__fold-toggle, .material-study__fold-toggle-vertical { transition: none; } }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 14px 18px; background: var(--cream); color: var(--ink); transform: translateY(-180%); }
 .skip-link:focus { transform: none; }
 a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }

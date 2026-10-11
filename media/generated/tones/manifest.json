@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-11",
+  "mode": "built-in image generation; precise-object-edit",
+  "source": "public/assets/daman-textile-palette.webp",
+  "webp": {
+    "quality": 82,
+    "compressionLevel": 6
+  },
+  "assets": [
+    {
+      "path": "public/assets/daman-tone-espresso-v1-1536.webp",
+      "bytes": 263906,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "93901372eb44447b059374ccb9b54e54355565b4863510f0d9fbf7fdc8e786f6"
+    },
+    {
+      "path": "public/assets/daman-tone-espresso-v1-480.webp",
+      "bytes": 23548,
+      "width": 480,
+      "height": 320,
+      "sha256": "18c8b2696933c0557de55c1aaa432ef4f52c878ec485c1765754505d0afb8a16"
+    },
+    {
+      "path": "public/assets/daman-tone-espresso-v1-960.webp",
+      "bytes": 118458,
+      "width": 960,
+      "height": 640,
+      "sha256": "1ed9d174ecbd8eb0f04b20d3ef99ec2cfc02fcab5c6370e0799b5cbacaa107af"
+    },
+    {
+      "path": "public/assets/daman-tone-ink-v1-1536.webp",
+      "bytes": 247120,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7b9642ae349f4653e5d3d73778a8f8a488bf048c3fbd356ef2f9dbd44766ff5b"
+    },
+    {
+      "path": "public/assets/daman-tone-ink-v1-480.webp",
+      "bytes": 24140,
+      "width": 480,
+      "height": 320,
+      "sha256": "dd0f52cd824a666c5f94872b489069512dd32498cac4120c5eaec25c6fab22d9"
+    },
+    {
+      "path": "public/assets/daman-tone-ink-v1-960.webp",
+      "bytes": 116052,
+      "width": 960,
+      "height": 640,
+      "sha256": "6405c683b0574b4c0c2d8c53a345e245551e99079b41b6d6a5e70715073fa3b6"
+    },
+    {
+      "path": "public/assets/daman-tone-mushroom-v1-1536.webp",
+      "bytes": 246370,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a27fd77995dfab43179b4abc8bd065997afce08fb933113bb424373794051f59"
+    },
+    {
+      "path": "public/assets/daman-tone-mushroom-v1-480.webp",
+      "bytes": 24758,
+      "width": 480,
+      "height": 320,
+      "sha256": "06cf020a35ab16573bea4f97ecb2df00daf7cca003ea6dd757022191d1030dea"
+    },
+    {
+      "path": "public/assets/daman-tone-mushroom-v1-960.webp",
+      "bytes": 116596,
+      "width": 960,
+      "height": 640,
+      "sha256": "cd73ad39222b0d5901213849a333336ebe0ac8eca703fdbdd58d324c9f5d08e0"
+    },
+    {
+      "path": "public/assets/daman-tone-oat-v1-1536.webp",
+      "bytes": 242480,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "417c2f63cb2eacbb8773ee624a6256a4f5558b4a6f56150368a3d42d4b53f9b8"
+    },
+    {
+      "path": "public/assets/daman-tone-oat-v1-480.webp",
+      "bytes": 21910,
+      "width": 480,
+      "height": 320,
+      "sha256": "23828baa89024cdfd6471d0ab50e9c4913e5cf04ded6e7a97e7086e03ffabc4e"
+    },
+    {
+      "path": "public/assets/daman-tone-oat-v1-960.webp",
+      "bytes": 111190,
+      "width": 960,
+      "height": 640,
+      "sha256": "5f4d05f09905cb6782bdcf9c3918636626000e3b40b955be58349c7a4b6afa53"
+    },
+    {
+      "path": "public/assets/daman-tone-olive-v1-1536.webp",
+      "bytes": 271916,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b247d54b735ac887ac70c5e233c48590c48ad41464479aba1c03e80a5b0153a2"
+    },
+    {
+      "path": "public/assets/daman-tone-olive-v1-480.webp",
+      "bytes": 25812,
+      "width": 480,
+      "height": 320,
+      "sha256": "d3d647cdac6fbf30edcc9f4ea926f0e6fa60320813131bbb26ad4536da06e935"
+    },
+    {
+      "path": "public/assets/daman-tone-olive-v1-960.webp",
+      "bytes": 126902,
+      "width": 960,
+      "height": 640,
+      "sha256": "13af8697112ad15fb665ed72977c37f8fdc358000d3eb60ca66c7b6bd196eca7"
+    },
+    {
+      "path": "media/generated/tones/daman-tone-espresso-v1.png",
+      "bytes": 3068773,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "46569c7cd89665e054ff4816e2ad3b7c7d2421ab5d810a7ce69b810568891a51"
+    },
+    {
+      "path": "media/generated/tones/daman-tone-ink-v1.png",
+      "bytes": 2999233,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "91c2eda327277a18dcb6b116a5a7adca5c5ae2094b5f0851372b4c7dacd874f1"
+    },
+    {
+      "path": "media/generated/tones/daman-tone-mushroom-v1.png",
+      "bytes": 3017892,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6bb66f1ad0efc7336ed81bc6200d425e9d093aae415f8652b5f1c547e50a4640"
+    },
+    {
+      "path": "media/generated/tones/daman-tone-oat-v1.png",
+      "bytes": 3010703,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "01470f20412f9e600f14095b76028761563909601b0d83d72e1105d0e8ce0c0e"
+    },
+    {
+      "path": "media/generated/tones/daman-tone-olive-v1.png",
+      "bytes": 3128143,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "62026998e13dc501d2f4195ea3d7bcc79a91a416d076bcd1431ba0a7113de19c"
+    }
+  ]
+}

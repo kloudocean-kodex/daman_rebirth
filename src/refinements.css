@@ -9,8 +9,6 @@ a, button, input, summary { scroll-margin-top: 100px; scroll-margin-bottom: 32px
 .room-reveal__label { pointer-events: none; transition: opacity .2s; }
 .room-reveal__actions button[aria-pressed="true"] { border-color: #786348; }
 .light-study__link, .contact__button, .contact__details > a { min-height: 44px; align-items: center; }
-.material-study__hint { margin: 22px 0 -16px; }
-.material-study__copy > .material-study__hint { font-size: 10px; }
 
 @media (max-width: 760px) {
   .header-cta__full { display: none; }

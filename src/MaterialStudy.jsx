@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const tones = [
-  { name: 'Oat', colour: '#d4c2a5', note: 'A warm, pale starting point. Pair gentle woven texture with timber and stone.' },
-  { name: 'Mushroom', colour: '#a89a86', note: 'A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.' },
-  { name: 'Olive', colour: '#646449', note: 'An earthy accent. A deeper textile tone brings natural colour into a restrained room.' },
-  { name: 'Espresso', colour: '#4c3c32', note: 'A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.' },
-  { name: 'Ink', colour: '#353c40', note: 'A cool, architectural contrast. Balance the depth with warm materials and natural light.' },
+  { id: 'oat', name: 'Oat', colour: '#d4c2a5', note: 'A warm, pale starting point. Pair gentle woven texture with timber and stone.' },
+  { id: 'mushroom', name: 'Mushroom', colour: '#a89a86', note: 'A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.' },
+  { id: 'olive', name: 'Olive', colour: '#646449', note: 'An earthy accent. A deeper textile tone brings natural colour into a restrained room.' },
+  { id: 'espresso', name: 'Espresso', colour: '#4c3c32', note: 'A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.' },
+  { id: 'ink', name: 'Ink', colour: '#353c40', note: 'A cool, architectural contrast. Balance the depth with warm materials and natural light.' },
 ];
+
+const imageSizes = '(max-width: 760px) 100vw, 52vw';
+const imageSource = (tone, width = 1536) => `/assets/daman-tone-${tone.id}-v1-${width}.webp`;
+const imageSources = (tone) => [480, 960, 1536].map((width) => `${imageSource(tone, width)} ${width}w`).join(', ');
 
 const folds = [
   { name: 'Curtain waves', type: 'wave', copy: 'S-fold headings create a continuous vertical wave. The heading and track guide the rhythm; fullness and fabric change the final drape.' },
@@ -26,25 +30,63 @@ function FoldMark({ type }) {
 
 export default function MaterialStudy() {
   const [selectedTone, setSelectedTone] = useState(tones[0]);
+  const [frame, setFrame] = useState({ tone: tones[0], previous: null });
+  const [isPreparing, setIsPreparing] = useState(false);
+  const [previewFailed, setPreviewFailed] = useState(false);
+  const requestRef = useRef(0);
+
+  useEffect(() => () => { requestRef.current += 1; }, []);
+
+  async function selectTone(tone) {
+    const request = ++requestRef.current;
+    setSelectedTone(tone);
+    setPreviewFailed(false);
+
+    if (tone.id === frame.tone.id) {
+      setIsPreparing(false);
+      return;
+    }
+
+    setIsPreparing(true);
+    const nextImage = new Image();
+    nextImage.sizes = imageSizes;
+    nextImage.srcset = imageSources(tone);
+    nextImage.src = imageSource(tone);
+
+    try {
+      await nextImage.decode();
+      if (request !== requestRef.current) return;
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      setFrame((current) => ({ tone, previous: reducedMotion ? null : current.tone }));
+    } catch {
+      if (request !== requestRef.current) return;
+      setPreviewFailed(true);
+    }
+
+    setIsPreparing(false);
+  }
 
   return (
     <section className="material-study" id="materials" aria-labelledby="materials-title">
-      <figure className="material-study__image">
-        <img src="/assets/daman-textile-palette.webp" alt="Generated editorial study of flax-toned sheers, mushroom and olive woven curtain waves, with textile and bronze finish samples" width="1440" height="960" loading="lazy" decoding="async" />
-        <figcaption>Original concept study · Not a product catalogue</figcaption>
+      <figure className="material-study__image" id="material-preview" aria-busy={isPreparing} data-tone={frame.tone.id} data-requested-tone={selectedTone.id}>
+        {frame.previous && <img className="material-study__previous" src={imageSource(frame.previous)} srcSet={imageSources(frame.previous)} sizes={imageSizes} alt="" aria-hidden="true" width="1536" height="1024" decoding="async" />}
+        <img key={frame.tone.id} className={frame.previous ? 'material-study__current material-study__current--reveal' : 'material-study__current'} src={imageSource(frame.tone)} srcSet={imageSources(frame.tone)} sizes={imageSizes} alt={`AI-generated ${frame.tone.name.toLowerCase()} woven curtains with continuous vertical S-fold waves, a flax sheer and stone and bronze details`} width="1536" height="1024" loading="lazy" decoding="async" onAnimationEnd={() => setFrame((current) => current.tone.id === frame.tone.id ? { ...current, previous: null } : current)} />
+        <figcaption><strong>{frame.tone.name} · A textile study</strong><span role="status">{isPreparing ? `Preparing ${selectedTone.name} preview…` : previewFailed ? `Preview unavailable · Showing ${frame.tone.name}. Select a tone to retry.` : 'Original concept · Not a product catalogue'}</span></figcaption>
       </figure>
-      <div className="material-study__copy">
+      <div className="material-study__intro">
         <p className="eyebrow">Material notes</p>
         <h2 id="materials-title">Texture first.<br /><em>Colour, considered.</em></h2>
         <p>Quiet woven surfaces. Deeper earth tones. The smallest material decision can change the whole conversation of a room.</p>
+      </div>
+      <div className="material-study__choices">
         <p className="material-study__hint" id="tone-help">Select a tone. Discover its mood.</p>
         <div className="material-study__swatches" role="group" aria-label="Explore colour inspiration" aria-describedby="tone-help">
-          {tones.map((tone) => <button type="button" key={tone.name} aria-pressed={selectedTone.name === tone.name} onClick={() => setSelectedTone(tone)}><span style={{ '--swatch-colour': tone.colour }} /><span>{tone.name}</span></button>)}
+          {tones.map((tone) => <button type="button" key={tone.name} aria-pressed={selectedTone.name === tone.name} aria-controls="material-preview material-preview-note" onClick={() => selectTone(tone)}><span style={{ '--swatch-colour': tone.colour }} /><span>{tone.name}</span></button>)}
         </div>
-        <p className="material-study__tone" aria-live="polite"><strong>{selectedTone.name}</strong> {selectedTone.note}</p>
+        <p className="material-study__tone" id="material-preview-note" aria-live="polite"><strong>{selectedTone.name}</strong> {selectedTone.note}</p>
         <details className="material-study__folds">
-          <summary>The shape of a finish <span aria-hidden="true">+</span></summary>
-          <div>{folds.map((fold) => <article key={fold.type}><FoldMark type={fold.type} /><div><h3>{fold.name}</h3><p>{fold.copy}</p></div></article>)}</div>
+          <summary><span className="material-study__fold-title">The shape of a finish<span>Curtain waves · Blind forms</span></span><span className="material-study__fold-toggle" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M4 10h12" /><path className="material-study__fold-toggle-vertical" d="M10 4v12" /></svg></span></summary>
+          <div className="material-study__fold-content">{folds.map((fold) => <article key={fold.type}><FoldMark type={fold.type} /><div><h3>{fold.name}</h3><p>{fold.copy}</p></div></article>)}</div>
         </details>
         <p className="material-study__disclaimer">Design inspiration, not a confirmed Daman range. Ask about available fabrics, headings and blind styles. Always judge colour from a physical sample in your room.</p>
         <a className="material-study__link" href="#contact">Find the right finish for your home <span aria-hidden="true">↗</span></a>

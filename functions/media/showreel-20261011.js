@@ -1,4 +1,4 @@
-import motionLedger from '../../media/generated/motion-ledger.json' with { type: 'json' };
+import motionLedger from '../../media/generated/motion-ledger.json';
 
 export function parseRange(value, length) {
   if (!value) return null;

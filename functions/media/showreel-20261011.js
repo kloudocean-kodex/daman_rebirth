@@ -73,6 +73,9 @@ export async function onRequest(context) {
   headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
   headers.delete('Content-Encoding');
+  headers.delete('Transfer-Encoding');
+  headers.delete('Connection');
+  headers.delete('Keep-Alive');
   const etag = headers.get('ETag');
   const validators = request.headers.get('If-None-Match')?.split(',').map(value => value.trim());
   if (validators?.some(value => value === '*' || value === etag)) {

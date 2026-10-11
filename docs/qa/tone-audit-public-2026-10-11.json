@@ -1,0 +1,403 @@
+{
+  "date": "2026-10-11",
+  "url": "https://daman-rebirth.pages.dev/",
+  "implementationCommit": "3adacd3ffd8a17d67b0bafeb8b8ca8a294366833",
+  "deployment": "9f420024-2b24-4ea0-9419-58339ac60550",
+  "bundle": {
+    "script": "index-Bx_X8tXA.js",
+    "style": "index-BPWkdvcL.css"
+  },
+  "tones": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "Oat",
+      "busy": "false",
+      "caption": "Oat · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-oat-v1-480.webp"
+        }
+      ],
+      "note": "Oat A warm, pale starting point. Pair gentle woven texture with timber and stone.",
+      "pressed": [
+        "Oat"
+      ],
+      "requested": "oat",
+      "shown": "oat",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "Mushroom",
+      "busy": "false",
+      "caption": "Mushroom · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-mushroom-v1-480.webp"
+        }
+      ],
+      "note": "Mushroom A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.",
+      "pressed": [
+        "Mushroom"
+      ],
+      "requested": "mushroom",
+      "shown": "mushroom",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "Olive",
+      "busy": "false",
+      "caption": "Olive · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-olive-v1-480.webp"
+        }
+      ],
+      "note": "Olive An earthy accent. A deeper textile tone brings natural colour into a restrained room.",
+      "pressed": [
+        "Olive"
+      ],
+      "requested": "olive",
+      "shown": "olive",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "Espresso",
+      "busy": "false",
+      "caption": "Espresso · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-espresso-v1-480.webp"
+        }
+      ],
+      "note": "Espresso A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.",
+      "pressed": [
+        "Espresso"
+      ],
+      "requested": "espresso",
+      "shown": "espresso",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "Ink",
+      "busy": "false",
+      "caption": "Ink · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-ink-v1-480.webp"
+        }
+      ],
+      "note": "Ink A cool, architectural contrast. Balance the depth with warm materials and natural light.",
+      "pressed": [
+        "Ink"
+      ],
+      "requested": "ink",
+      "shown": "ink",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "name": "Oat",
+      "busy": "false",
+      "caption": "Oat · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-oat-v1-480.webp"
+        }
+      ],
+      "note": "Oat A warm, pale starting point. Pair gentle woven texture with timber and stone.",
+      "pressed": [
+        "Oat"
+      ],
+      "requested": "oat",
+      "shown": "oat",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "name": "Mushroom",
+      "busy": "false",
+      "caption": "Mushroom · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-mushroom-v1-480.webp"
+        }
+      ],
+      "note": "Mushroom A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.",
+      "pressed": [
+        "Mushroom"
+      ],
+      "requested": "mushroom",
+      "shown": "mushroom",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "name": "Olive",
+      "busy": "false",
+      "caption": "Olive · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-olive-v1-480.webp"
+        }
+      ],
+      "note": "Olive An earthy accent. A deeper textile tone brings natural colour into a restrained room.",
+      "pressed": [
+        "Olive"
+      ],
+      "requested": "olive",
+      "shown": "olive",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "name": "Espresso",
+      "busy": "false",
+      "caption": "Espresso · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-espresso-v1-480.webp"
+        }
+      ],
+      "note": "Espresso A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.",
+      "pressed": [
+        "Espresso"
+      ],
+      "requested": "espresso",
+      "shown": "espresso",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "name": "Ink",
+      "busy": "false",
+      "caption": "Ink · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-ink-v1-480.webp"
+        }
+      ],
+      "note": "Ink A cool, architectural contrast. Balance the depth with warm materials and natural light.",
+      "pressed": [
+        "Ink"
+      ],
+      "requested": "ink",
+      "shown": "ink",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "name": "Oat",
+      "busy": "false",
+      "caption": "Oat · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-oat-v1-960.webp"
+        }
+      ],
+      "note": "Oat A warm, pale starting point. Pair gentle woven texture with timber and stone.",
+      "pressed": [
+        "Oat"
+      ],
+      "requested": "oat",
+      "shown": "oat",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "name": "Mushroom",
+      "busy": "false",
+      "caption": "Mushroom · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-mushroom-v1-960.webp"
+        }
+      ],
+      "note": "Mushroom A quiet mid-tone. Think soft drape, matte finishes and layered neutrals.",
+      "pressed": [
+        "Mushroom"
+      ],
+      "requested": "mushroom",
+      "shown": "mushroom",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "name": "Olive",
+      "busy": "false",
+      "caption": "Olive · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-olive-v1-960.webp"
+        }
+      ],
+      "note": "Olive An earthy accent. A deeper textile tone brings natural colour into a restrained room.",
+      "pressed": [
+        "Olive"
+      ],
+      "requested": "olive",
+      "shown": "olive",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "name": "Espresso",
+      "busy": "false",
+      "caption": "Espresso · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-espresso-v1-960.webp"
+        }
+      ],
+      "note": "Espresso A grounded dark tone. Use it as a considered counterpoint to lighter walls and sheers.",
+      "pressed": [
+        "Espresso"
+      ],
+      "requested": "espresso",
+      "shown": "espresso",
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "name": "Ink",
+      "busy": "false",
+      "caption": "Ink · A textile studyOriginal concept · Not a product catalogue",
+      "image": [
+        {
+          "decoded": true,
+          "opacity": "1",
+          "src": "https://daman-rebirth.pages.dev/assets/daman-tone-ink-v1-960.webp"
+        }
+      ],
+      "note": "Ink A cool, architectural contrast. Balance the depth with warm materials and natural light.",
+      "pressed": [
+        "Ink"
+      ],
+      "requested": "ink",
+      "shown": "ink",
+      "pass": true
+    }
+  ],
+  "folds": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "titleOpens": true,
+      "iconCloses": true,
+      "enterOpens": true,
+      "spaceCloses": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "titleOpens": true,
+      "iconCloses": true,
+      "enterOpens": true,
+      "spaceCloses": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "titleOpens": true,
+      "iconCloses": true,
+      "enterOpens": true,
+      "spaceCloses": true
+    }
+  ],
+  "contact": {
+    "email": "mailto:info@damangroup.com.au",
+    "focus": "contact",
+    "hash": "#contact"
+  },
+  "networkIssues": [],
+  "consoleErrors": [],
+  "visualScreenshots": [
+    "tone-live-desktop-2026-10-11.jpg",
+    "tone-live-mobile-2026-10-11.jpg",
+    "tone-live-mobile-open-2026-10-11.jpg",
+    "tone-live-tablet-2026-10-11.jpg"
+  ],
+  "scope": "Real Edge public-site interaction with emulated viewports. Not physical-device or full assistive-technology certification."
+}

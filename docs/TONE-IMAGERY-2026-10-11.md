@@ -8,6 +8,8 @@ The same translucent sheer, stone and bronze details remain across the series. B
 
 WebP encoding: FFmpeg libwebp, quality 82, compression level 6, proportional scaling only. Originals remain unchanged. No hue filters or whole-scene colour overlays are used at runtime. Only Oat is initially rendered (lazy); other previews are requested on selection, decoded before replacement, with cancellation of stale requests and preservation of the last successful image on error. Reduced-motion users receive an immediate decoded replacement rather than a fade.
 
+Versioned tone delivery files have a narrow one-year immutable browser-cache rule. Keep v1 files unchanged; future edits must use new versioned paths. This follows [Cloudflare Pages custom caching guidance](https://developers.cloudflare.com/pages/configuration/headers/).
+
 ## Prompt set
 
 ### Oat

@@ -72,3 +72,11 @@ Final six-chapter local checks on 10 October 2026:
 - Offscreen playback paused when the daylight control received focus. Native range Home/End produced 0/100, changed the displayed mood and CSS lighting values; pointer input also worked.
 - All temporary media, device, cache and network-blocking overrides were removed after QA.
 - Screenshots are retained in `docs/qa`; the six-chapter contact sheet was visually inspected. Physical-device Safari/Android checks and a full accessibility/performance audit remain separate release gates.
+
+## Superseding native showreel release — 11 October 2026
+
+The current implementation replaces the still-image edit with the six selected genuine-motion scenes. The Flow source is muted in Adobe's timeline; the unchanged native 720p/Medium export contains **zero audio tracks**. Its 25,642,239 bytes fit Pages, with 839 frames at 24 fps over approximately 34.96 seconds. Six component ingredients and nine embedded manifests remain; the existing Adobe editor trust-list warning is openly retained, not fixed through fake signing or removal.
+
+The supplied `DG_Showreel_Final.mp4` and earlier native 1080p rough cut have identical decoded-frame hashes, so the selected edit matches the user's film. The larger supplied file remains unchanged in Downloads. No regeneration, credit purchase, subscription change or watermark removal was needed.
+
+Full-frame framing, phone/tablet film-first composition, high-priority matched poster, stable single movie source across resizes, slow-connection/reduced-motion avoidance and error fallback are implemented. The grey-and-gold welcome waits only for critical poster/fonts, with a 1.4-second safety timeout; it is not a guarantee that all below-fold requests or the entire film have completed. Current deployment/visual evidence and honest device/performance limitations are in [the 11 October release audit](RELEASE-AUDIT-2026-10-11.md). Earlier checkpoints above remain historical evidence.

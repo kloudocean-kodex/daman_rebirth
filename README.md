@@ -20,11 +20,11 @@ No runtime environment variables are required. Contact paths are `tel:` and `mai
 
 ## Hero film
 
-The hero uses a silent, 26-second H.264 concept film covering six services, with camera drift and soft dissolves rendered from original AI-generated artwork. It is illustrative imagery, not real Daman project footage or AI-generated moving fabric. Desktop and portrait mobile versions are committed in `public/assets`, so Cloudflare Pages does not need a video service or encoder.
+The hero now uses a silent, approximately 35-second native Adobe showreel assembled from six genuine generated-motion concepts: the preferred Google Flow sheers and five Adobe service scenes. It is illustrative imagery, not real Daman project footage or verified product-operation footage. The unchanged native 720p/24 fps MP4 is committed in `public/assets`; Cloudflare Pages needs no encoder, media API or paid hosting addition.
 
-Playback is muted and inline, with a pause/play button, still-image fallback, and automatic pausing offscreen or in a hidden tab. Reduced-motion and data-saving preferences prevent the video from being mounted or downloaded.
+The film has no audio track. Playback additionally enforces muted/zero-volume inline playback, with pause/play, poster fallback, and automatic pausing offscreen or in a hidden tab. Reduced motion, data saving and reported slow connections prevent video mounting. The full frame and mandatory Veo mark are retained; phone/tablet layouts separate the film from the headline instead of cropping it.
 
-To regenerate with an installed FFmpeg executable:
+To reproduce the superseded still-artwork edit for reference, not the current hero:
 
 ```bash
 node scripts/render-hero-video.mjs
@@ -32,7 +32,11 @@ node scripts/render-hero-video.mjs
 
 Set `FFMPEG_PATH` if FFmpeg is not on your PATH. See [docs/HERO-VIDEO.md](docs/HERO-VIDEO.md) for provenance and validation.
 
-Eight genuine-motion originals, including the alternative sheer take and clearer-motion fly-screen retake, are retained separately in `media/generated`; they have not replaced the still-artwork hero. Flow is the user's preferred sheer take, not an extra duplicate chapter. Adobe usage reconciles to 760 existing included credits with 240 remaining; no purchase was made. The six selected clips were imported into Adobe's timeline, and a native rough-cut export is preserved. Its six source ingredients survive in embedded Content Credentials, but the editor signature has a trust-list warning and the 44.6 MB export exceeds the Pages asset limit. It is not a finished public hero. With FFmpeg and C2PA Tool installed, `npm run media:audit` verifies source hashes, full video decoding, duration and embedded credentials; add `-- --trust` to check the official C2PA trust list. Set `FFMPEG_PATH` and `C2PATOOL_PATH` as needed. See the [release audit](docs/RELEASE-AUDIT-2026-10-10.md) for exact status and the remaining cinematic-production gates.
+Eight unchanged motion originals and the native 1080p rough cut remain separately in `media/generated`. The new 25,642,239-byte silent web export fits Pages' 25 MiB limit and preserves nine embedded Content Credentials manifests/six ingredient links. The Adobe editor's official trust-list warning remains documented; it is not represented as a clean trusted-identity result. Last generation-credit reconciliation on 10 October: 760/1000 included credits used, 240 remaining; no new generation, purchase or plan change in this release.
+
+With FFmpeg and C2PA Tool installed, `npm run media:audit` audits the eight sources and `npm run media:audit:hero -- --trust` audits the native web film, audio absence and exact selected ingredients. Set `FFMPEG_PATH` and `C2PATOOL_PATH` as needed. Do not recompress/remux the signed film using a workflow that strips provenance. See the [current release audit](docs/RELEASE-AUDIT-2026-10-11.md) for verified checks, delivery trade-offs and outstanding gates.
+
+The champagne-gold D-and-dot intro is a lightweight SVG/CSS interpretation of the supplied logos. It waits only for the critical poster/fonts, exits within 1.4 seconds plus its fade, skips repeat tab-session visits/reduced motion, and never traps focus or waits for the whole MP4. Original logo references are preserved in `docs/branding`.
 
 ## Audit and research
 

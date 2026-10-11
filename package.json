@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "media:audit": "node scripts/audit-generated-motion.mjs",
+    "media:audit:hero": "node scripts/audit-showreel.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

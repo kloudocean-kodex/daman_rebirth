@@ -1,12 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 
-const chapters = ['Sheer curtains', 'Blinds', 'Plantation shutters', 'Curtains', 'Security doors', 'Fly screens'];
-
 export default function HeroVideo() {
   const containerRef = useRef(null);
   const videoRef = useRef(null);
   const [motionAllowed, setMotionAllowed] = useState(false);
-  const [mobile, setMobile] = useState(false);
   const [inView, setInView] = useState(false);
   const [seenHero, setSeenHero] = useState(false);
   const [pageVisible, setPageVisible] = useState(true);
@@ -14,21 +11,17 @@ export default function HeroVideo() {
   const [playing, setPlaying] = useState(false);
   const [hasFrame, setHasFrame] = useState(false);
   const [failed, setFailed] = useState(false);
-  const [chapter, setChapter] = useState(0);
 
   useEffect(() => {
     const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const mobilePreference = window.matchMedia('(max-width: 760px)');
     const connection = navigator.connection;
     const updatePreferences = () => {
-      setMotionAllowed(!motionPreference.matches && !connection?.saveData);
-      setMobile(mobilePreference.matches);
+      setMotionAllowed(!motionPreference.matches && !connection?.saveData && !['slow-2g', '2g', '3g'].includes(connection?.effectiveType));
     };
     const updateVisibility = () => setPageVisible(!document.hidden);
     updatePreferences();
     updateVisibility();
     motionPreference.addEventListener('change', updatePreferences);
-    mobilePreference.addEventListener('change', updatePreferences);
     connection?.addEventListener('change', updatePreferences);
     document.addEventListener('visibilitychange', updateVisibility);
     const observer = new IntersectionObserver(([entry]) => {
@@ -38,7 +31,6 @@ export default function HeroVideo() {
     observer.observe(containerRef.current);
     return () => {
       motionPreference.removeEventListener('change', updatePreferences);
-      mobilePreference.removeEventListener('change', updatePreferences);
       connection?.removeEventListener('change', updatePreferences);
       document.removeEventListener('visibilitychange', updateVisibility);
       observer.disconnect();
@@ -48,12 +40,15 @@ export default function HeroVideo() {
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+    video.muted = true;
+    video.defaultMuted = true;
+    video.volume = 0;
     if (motionAllowed && inView && pageVisible && wantsPlay && !failed) {
       video.play().catch(() => setPlaying(false));
     } else {
       video.pause();
     }
-  }, [motionAllowed, mobile, inView, pageVisible, wantsPlay, failed]);
+  }, [motionAllowed, seenHero, inView, pageVisible, wantsPlay, failed]);
 
   const togglePlayback = () => {
     if (playing) {
@@ -68,18 +63,14 @@ export default function HeroVideo() {
   return (
     <>
       <div className="hero__media" ref={containerRef}>
-        <picture>
-          <source media="(max-width: 760px)" srcSet="/assets/daman-hero-mobile-poster.jpg" />
-          <img className="hero__poster" src="/assets/daman-hero-desktop-poster.jpg" alt="Sunlit contemporary living room with sheer curtains; illustrative concept imagery" width="1600" height="900" fetchPriority="high" />
-        </picture>
+        <img className="hero__poster" src="/assets/daman-showreel-poster.jpg" alt="Sunlit contemporary living room with sheer curtains; illustrative concept imagery" width="1280" height="720" fetchPriority="high" decoding="async" />
         {motionAllowed && seenHero && !failed && (
           <video
-            key={mobile ? 'mobile' : 'desktop'}
             ref={videoRef}
             id="hero-film"
             className={`hero__video ${hasFrame ? 'hero__video--ready' : ''}`}
-            src={`/assets/daman-hero-${mobile ? 'mobile' : 'desktop'}.mp4`}
-            poster={`/assets/daman-hero-${mobile ? 'mobile' : 'desktop'}-poster.jpg`}
+            src="/assets/daman-showreel-web.mp4"
+            poster="/assets/daman-showreel-poster.jpg"
             muted
             playsInline
             loop
@@ -87,15 +78,15 @@ export default function HeroVideo() {
             aria-hidden="true"
             tabIndex={-1}
             onLoadStart={() => setHasFrame(false)}
-            onTimeUpdate={event => setChapter(event.currentTarget.currentTime >= 24.5 ? 0 : Math.min(5, Math.floor(Math.max(0, event.currentTarget.currentTime - 0.5) / 4)))}
             onPlaying={() => { setHasFrame(true); setPlaying(true); }}
             onPause={() => setPlaying(false)}
+            onVolumeChange={event => { if (!event.currentTarget.muted) event.currentTarget.muted = true; if (event.currentTarget.volume !== 0) event.currentTarget.volume = 0; }}
             onError={() => { setFailed(true); setPlaying(false); }}
           />
         )}
       </div>
       {motionAllowed && seenHero && !failed && (
-        <p className="hero__film-caption" aria-hidden="true"><span>0{chapter + 1} / 06</span>{chapters[chapter]}</p>
+        <p className="hero__film-caption" aria-hidden="true"><span>The Daman film</span>Six considered details</p>
       )}
       {motionAllowed && seenHero && !failed && (
         <button className="hero__motion-toggle" type="button" onClick={togglePlayback} aria-controls="hero-film" aria-label={playing ? 'Pause background video' : 'Play background video'}>

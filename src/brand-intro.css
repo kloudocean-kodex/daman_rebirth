@@ -1,0 +1,43 @@
+.brand-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  color: #d8c493;
+  background: radial-gradient(ellipse at 65% 25%, #474942, #30332f 60%);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .45s ease, visibility .45s;
+}
+
+.brand-intro::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(125deg, transparent 32%, #eee6ce08 32.1%, #eee6ce08 44%, transparent 44.1%);
+}
+
+.brand-intro--dismissed { opacity: 0; visibility: hidden; }
+.brand-intro__identity { position: relative; width: 240px; text-align: center; }
+.brand-intro__mark { display: block; width: 75px; height: 84px; margin: 0 auto 27px; }
+.brand-intro__name { margin: 0; font: 600 29px/1 var(--sans); letter-spacing: .22em; padding-left: .22em; }
+.brand-intro__name span { display: block; margin-top: 12px; font-size: 9px; letter-spacing: .55em; padding-left: .33em; }
+.brand-intro__rule { display: block; width: 42px; height: 1px; margin: 30px auto 19px; background: #b9a26e; }
+.brand-intro__note { margin: 0; color: #d6d4cb; font: 400 9px/1.5 var(--mono); letter-spacing: .08em; }
+.wordmark--branded { width: auto; flex-direction: row; align-items: center; gap: 12px; }
+.wordmark__mark { width: 30px; height: 34px; color: #d8c493; flex: 0 0 auto; }
+.wordmark__type { display: flex; flex-direction: column; }
+.site-header--scrolled .wordmark__mark { color: #8d7447; }
+.wordmark--footer .wordmark__mark { color: #d8c493; }
+
+@media (max-width: 760px) {
+  .wordmark--branded { width: auto; gap: 8px; }
+  .wordmark__mark { width: 24px; height: 28px; }
+  .site-header .header-cta { font-size: 9px; margin-right: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro { display: none; }
+}

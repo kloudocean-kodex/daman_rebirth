@@ -18,6 +18,12 @@ npm run dev
 
 No runtime environment variables are required. Contact paths are `tel:` and `mailto:` links; add a server-side lead endpoint before replacing them with a web form.
 
+### Production domain
+
+The canonical URL, social preview URLs, `robots.txt`, and `sitemap.xml` use `https://damangroup.com.au/`. The Pages `_redirects` file preserves the previous `/index.html`, `/about.html`, `/contact.html`, and gallery URLs.
+
+In Cloudflare Pages, add `damangroup.com.au` as a custom domain before relying on DNS records; add `www.damangroup.com.au` as well if it should redirect to the apex domain. Verify the authoritative DNS and retain any existing mail-related MX/TXT records before saving changes. DNS and redirect rules must be verified in the account dashboard; this repository change alone does not publish the domain.
+
 ## Hero film
 
 The hero now uses a silent, approximately 35-second native Adobe showreel assembled from six genuine generated-motion concepts: the preferred Google Flow sheers and five Adobe service scenes. It is illustrative imagery, not real Daman project footage or verified product-operation footage. The unchanged native 720p/24 fps MP4 is committed in `public/assets`; Cloudflare Pages needs no encoder, media API or paid hosting addition.

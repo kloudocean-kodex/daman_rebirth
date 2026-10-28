@@ -78,7 +78,9 @@ function renderPage(template, page, markup) {
     html = replaceRequired(html, new RegExp(`<meta ${attribute}="${name}" content="[^"]*"\\s*\\/?>`), `<meta ${attribute}="${name}" content="${escapeAttribute(content)}" />`, name);
   }
   if (page.path !== '/') {
-    html = replaceRequired(html, /<link rel="preload" as="image" href="\/assets\/daman-showreel-poster\.jpg"[^>]*>/, `<link rel="preload" as="image" href="${page.image}" fetchpriority="high" />`, 'homepage poster preload');
+    const imageBase = page.image.replace(/-\d+\.webp$/, '');
+    const sourceSet = [...new Set([480, 960, page.imageWidth])].map(width => `${imageBase}-${width}.webp ${width}w`).join(', ');
+    html = replaceRequired(html, /<link rel="preload" as="image" href="\/assets\/daman-showreel-poster\.jpg"[^>]*>/, `<link rel="preload" as="image" href="${page.image}" imagesrcset="${sourceSet}" imagesizes="(max-width: 900px) 100vw, 57vw" fetchpriority="high" />`, 'homepage poster preload');
   }
   return replaceRequired(html, /<div id="root"><\/div>/, `<div id="root">${markup}</div>`, 'empty React root');
 }

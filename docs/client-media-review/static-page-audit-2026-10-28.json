@@ -1,0 +1,42 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "title": "Daman Group | Window Furnishings &amp; Home Detail",
+      "h1Count": 1,
+      "duplicateIds": [],
+      "internalLinks": 25,
+      "localAssets": 18,
+      "prerendered": true
+    },
+    {
+      "route": "/sheer-curtains/",
+      "title": "Sheer Curtains Melbourne | Daman Group",
+      "h1Count": 1,
+      "duplicateIds": [],
+      "internalLinks": 19,
+      "localAssets": 12,
+      "prerendered": true
+    },
+    {
+      "route": "/blockout-blinds/",
+      "title": "Blockout Blinds Melbourne | Daman Group",
+      "h1Count": 1,
+      "duplicateIds": [],
+      "internalLinks": 18,
+      "localAssets": 11,
+      "prerendered": true
+    },
+    {
+      "route": "/about/",
+      "title": "About Daman Group | Epping, Melbourne",
+      "h1Count": 1,
+      "duplicateIds": [],
+      "internalLinks": 17,
+      "localAssets": 7,
+      "prerendered": true
+    }
+  ],
+  "result": "pass",
+  "boundary": "Static document, metadata, asset and link-target validation; browser interactions and visual layout are separate checks."
+}

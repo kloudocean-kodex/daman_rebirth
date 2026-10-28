@@ -1,6 +1,6 @@
 # Daman Group Rebirth
 
-An original, responsive Vite + React concept for Daman Group Pty Ltd. It is designed as a static Cloudflare Pages deployment and deliberately uses only verified public business information and original, AI-generated visuals.
+An original, responsive Vite + React site for Daman Group Pty Ltd, deployed through Git-connected Cloudflare Pages. The homepage and collection pages combine supplied real project photography with clearly labelled original concept studies and the established concept hero film.
 
 ## Run locally
 
@@ -14,9 +14,21 @@ npm run dev
 - Framework preset: `Vite`
 - Build command: `npm run build`
 - Build output directory: `dist`
-- Node version: `20` or newer
+- Node version: `22.12` or newer (Node 24 is also supported)
 
 No runtime environment variables are required. Contact paths are `tel:` and `mailto:` links; add a server-side lead endpoint before replacing them with a web form.
+
+## Collections and real media
+
+The build prerenders `/`, `/sheer-curtains/`, `/blockout-blinds/` and `/about/` into HTML with route-specific metadata. `node scripts/audit-pages.mjs` checks document headings, duplicate IDs, local asset references and internal link targets after a build. Browser visual and interaction QA remains a separate check.
+
+The 28 October supplied-media selection uses real full-height S-fold curtain and roller-blind photographs. Original source filenames and hashes are recorded in `docs/client-media-review/selected-assets.json`. Responsive WebP exports preserve the photographed geometry. The eight-colour sheer atelier is a clearly labelled digital tint preview, not a confirmed product range.
+
+The two collection films are silent, click-to-play portrait exports with no audio streams. Their source footage is 478×850; neither the exports nor their presentation claim native HD detail. Full-decoding and audio-absence evidence is in `docs/client-media-review/film-exports.json`.
+
+To reproduce the optional media preparation, set `CLIENT_MEDIA_SOURCE` to the original client directory and `FFMPEG_PATH` to your FFmpeg executable, then run `node scripts/review-client-media.mjs`, `node scripts/prepare-client-assets.mjs` and `node scripts/encode-client-films.mjs`. Committed assets allow Cloudflare builds without FFmpeg or access to the private source folder.
+
+The public address was confirmed by the owner: 134 Gateway Boulevard, Epping, Victoria, Australia. See `docs/REAL-PROJECT-REFINEMENT-2026-10-28.md` for the brief, source review and verification boundaries.
 
 ### Production domain
 

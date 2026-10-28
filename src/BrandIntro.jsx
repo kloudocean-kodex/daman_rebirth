@@ -13,7 +13,12 @@ function shouldShowIntro() {
 }
 
 export default function BrandIntro() {
-  const [visible, setVisible] = useState(shouldShowIntro);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => setVisible(shouldShowIntro()));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
 
   useEffect(() => {
     if (!visible) return;

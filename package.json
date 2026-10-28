@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender-pages.mjs",
     "lint": "oxlint",
     "media:audit": "node scripts/audit-generated-motion.mjs",
     "media:audit:hero": "node scripts/audit-showreel.mjs",
@@ -22,6 +22,7 @@
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "^1.81.0",
+    "sharp": "^0.35.5",
     "vite": "^8.3.0",
     "wrangler": "^4.149.0"
   }

@@ -1,0 +1,258 @@
+[
+  {
+    "name": "sheers-living",
+    "source": "WhatsApp Image 2026-10-25 at 6.07.28 PM.jpeg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "547c183e51f5d305387a60346f7ee3755fa78c5ff3af95ae7a26900fb14f3d00",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-living-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-living-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sheers-living-v1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-panorama",
+    "source": "WhatsApp Image 2026-10-25 at 6.07.30 PM (3).jpeg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "7af528d114b99f7bf6057f2490c035d1cd496b026eddfc39bba4e11f3cb8bba6",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-panorama-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-panorama-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sheers-panorama-v1-1280.webp",
+        "width": 1280
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sfold-detail",
+    "source": "WhatsApp Image 2026-10-25 at 6.04.20 PM.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "sha256": "6d135ce696f305dcebca1adc74f12d0cd3fdf3696f70a831c61184b31ab92ced",
+    "outputs": [
+      {
+        "url": "/assets/projects/sfold-detail-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sfold-detail-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sfold-detail-v1-1200.webp",
+        "width": 1200
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-full-height",
+    "source": "WhatsApp Image 2026-10-25 at 6.04.19 PM (1).jpeg",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "02fbee0785227afaa8f5a369b8baa5babc248fcd7feeac7b21d7162786d56511",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-full-height-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-full-height-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sheers-full-height-v1-1600.webp",
+        "width": 1600
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-kitchen",
+    "source": "WhatsApp Image 2026-10-25 at 6.04.44 PM (2).jpeg",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "9f42c386f5969aaf622949b9bdcd7068718d9bfc09af6680d1d7cd7f079505f1",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-kitchen-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-kitchen-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sheers-kitchen-v1-1600.webp",
+        "width": 1600
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-bedroom",
+    "source": "WhatsApp Image 2026-10-25 at 6.04.44 PM (1).jpeg",
+    "width": 1200,
+    "height": 1600,
+    "sha256": "b64fec9f2732253f41ade4a8061fe18550dd93937ca1b963be32be8b2f274b20",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-bedroom-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-bedroom-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/sheers-bedroom-v1-1200.webp",
+        "width": 1200
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-bedroom-warm",
+    "source": "WhatsApp Image 2026-10-25 at 6.07.29 PM (1).jpeg",
+    "width": 960,
+    "height": 1280,
+    "sha256": "040c49912daca1c61b56e9eaab3995b9f531e3175863425af1472d096999c2a4",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-bedroom-warm-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-bedroom-warm-v1-960.webp",
+        "width": 960
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "sheers-corner",
+    "source": "WhatsApp Image 2026-10-25 at 6.07.30 PM (2).jpeg",
+    "width": 960,
+    "height": 1280,
+    "sha256": "7c08b415ce2a6df8cce27ab45e2ed3da484ce2d6e18ee3b1ad00c56fca160bb3",
+    "outputs": [
+      {
+        "url": "/assets/projects/sheers-corner-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/sheers-corner-v1-960.webp",
+        "width": 960
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "blockout-room",
+    "source": "WhatsApp Image 2026-10-25 at 6.05.37 PM.jpeg",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "ae5eb02ea50c8d8e59116eb3eb40e4686ebd8e512eb6556bd3f5efdd0e9af94a",
+    "outputs": [
+      {
+        "url": "/assets/projects/blockout-room-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/blockout-room-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/blockout-room-v1-1600.webp",
+        "width": 1600
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "blockout-bedroom",
+    "source": "WhatsApp Image 2026-10-25 at 6.05.36 PM (1).jpeg",
+    "width": 1200,
+    "height": 1600,
+    "sha256": "879c51aa77f90ccb59fb4f48f27e6723ba25520b6552f3ba4e4ce38da5171293",
+    "outputs": [
+      {
+        "url": "/assets/projects/blockout-bedroom-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/blockout-bedroom-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/blockout-bedroom-v1-1200.webp",
+        "width": 1200
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "blockout-office",
+    "source": "WhatsApp Image 2026-10-25 at 6.03.35 PM.jpeg",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "c0f2ec47926a97d21611e1e93bfd06bd4fc0ee6e8b39ade6c37508049cd0f420",
+    "outputs": [
+      {
+        "url": "/assets/projects/blockout-office-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/blockout-office-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/blockout-office-v1-1600.webp",
+        "width": 1600
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  },
+  {
+    "name": "roller-layering",
+    "source": "WhatsApp Image 2026-10-25 at 6.05.31 PM.jpeg",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "02f5c213145c43c294e732e418fadcd0ac4732d7cf8a19c33ac1c475f7e336a8",
+    "outputs": [
+      {
+        "url": "/assets/projects/roller-layering-v1-480.webp",
+        "width": 480
+      },
+      {
+        "url": "/assets/projects/roller-layering-v1-960.webp",
+        "width": 960
+      },
+      {
+        "url": "/assets/projects/roller-layering-v1-1600.webp",
+        "width": 1600
+      }
+    ],
+    "treatment": "Orientation and responsive WebP export only; no invented fabric geometry or room retouching."
+  }
+]

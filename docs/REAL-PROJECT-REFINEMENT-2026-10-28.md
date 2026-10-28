@@ -48,3 +48,14 @@ The build prerenders all four pages into actual HTML documents with individual t
 Edge was confirmed running, the ChatGPT extension enabled, and the native messaging manifest valid using the bundled official diagnostic commands. The browser control host remained unavailable after retries and the supported fresh-profile-window reconnect. The native Windows capture helper also timed out. No responsive screenshot, hydration, real click, runtime video-playback or public visual pass is claimed for this release. The user has been asked to reconnect/reinstall the Browser plugin so these checks can be completed.
 
 Pending: desktop/mobile/tablet visual and interaction checks through a working browser connection; physical iPhone/Android playback and real cellular checks; formal assistive-technology testing. The existing custom-domain/DNS and enquiry-delivery boundaries remain separate from this Pages review release.
+
+### Public review release
+
+- Implementation commit `67af2b8` deployed successfully on Cloudflare Pages as `2052bf83-cf0a-4981-be8e-fa421a7c4f11`.
+- Responsive hero preload refinement `ceb9ae7` deployed successfully as `fd25fb08-51bb-464d-a13c-5067da9eaadf`. Interior hero preloads now share the rendered image's responsive source set and sizes; the About hero uses the same tablet breakpoint as its layout.
+- Public HTTP checks pass for `/`, `/sheer-curtains/`, `/blockout-blinds/` and `/about/` at `https://daman-rebirth.pages.dev`. All four return 200, match the current built application bundle, contain the confirmed address, and expose one H1.
+- All 38 new photo variants, posters and video files return 200 and match their local SHA-256 hashes. This confirms that the public real-video files are the exact verified audio-free exports.
+- The existing hero streaming route returns `206`, `Content-Range: bytes 0-1/25642239` and exactly two bytes for the requested range.
+- Machine-readable proof is in `client-media-review/public-http-audit-2026-10-28.json`; `node scripts/audit-public-pages.mjs` reproduces the checks.
+
+These are deployment/content checks. The fresh browser-session reset and fresh browser inventory still returned an unavailable control host, so the browser visual/click/playback gate remains pending. This is a published review release, not a claim of universal device certification.

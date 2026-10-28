@@ -1,0 +1,314 @@
+{
+  "base": "https://daman-rebirth.pages.dev",
+  "bundle": "/assets/index-BUwp3-O3.js",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Daman Group | Window Furnishings &amp; Home Detail",
+      "h1Count": 1,
+      "matchesBuild": true,
+      "addressPresent": true
+    },
+    {
+      "route": "/sheer-curtains/",
+      "status": 200,
+      "title": "Sheer Curtains Melbourne | Daman Group",
+      "h1Count": 1,
+      "matchesBuild": true,
+      "addressPresent": true
+    },
+    {
+      "route": "/blockout-blinds/",
+      "status": 200,
+      "title": "Blockout Blinds Melbourne | Daman Group",
+      "h1Count": 1,
+      "matchesBuild": true,
+      "addressPresent": true
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "title": "About Daman Group | Epping, Melbourne",
+      "h1Count": 1,
+      "matchesBuild": true,
+      "addressPresent": true
+    }
+  ],
+  "assets": [
+    {
+      "url": "/assets/projects/sheers-living-v1-480.webp",
+      "status": 200,
+      "bytes": 22072,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-living-v1-960.webp",
+      "status": 200,
+      "bytes": 82304,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-living-v1-1280.webp",
+      "status": 200,
+      "bytes": 129158,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-panorama-v1-480.webp",
+      "status": 200,
+      "bytes": 20388,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-panorama-v1-960.webp",
+      "status": 200,
+      "bytes": 71476,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-panorama-v1-1280.webp",
+      "status": 200,
+      "bytes": 114450,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sfold-detail-v1-480.webp",
+      "status": 200,
+      "bytes": 16356,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sfold-detail-v1-960.webp",
+      "status": 200,
+      "bytes": 43284,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sfold-detail-v1-1200.webp",
+      "status": 200,
+      "bytes": 60326,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-full-height-v1-480.webp",
+      "status": 200,
+      "bytes": 9734,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-full-height-v1-960.webp",
+      "status": 200,
+      "bytes": 25568,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-full-height-v1-1600.webp",
+      "status": 200,
+      "bytes": 53696,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-kitchen-v1-480.webp",
+      "status": 200,
+      "bytes": 15860,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-kitchen-v1-960.webp",
+      "status": 200,
+      "bytes": 54174,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-kitchen-v1-1600.webp",
+      "status": 200,
+      "bytes": 122944,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-bedroom-v1-480.webp",
+      "status": 200,
+      "bytes": 28270,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-bedroom-v1-960.webp",
+      "status": 200,
+      "bytes": 130894,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-bedroom-v1-1200.webp",
+      "status": 200,
+      "bytes": 191446,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-bedroom-warm-v1-480.webp",
+      "status": 200,
+      "bytes": 31104,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-bedroom-warm-v1-960.webp",
+      "status": 200,
+      "bytes": 102372,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-corner-v1-480.webp",
+      "status": 200,
+      "bytes": 32330,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-corner-v1-960.webp",
+      "status": 200,
+      "bytes": 94842,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-room-v1-480.webp",
+      "status": 200,
+      "bytes": 8640,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-room-v1-960.webp",
+      "status": 200,
+      "bytes": 22858,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-room-v1-1600.webp",
+      "status": 200,
+      "bytes": 48618,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-bedroom-v1-480.webp",
+      "status": 200,
+      "bytes": 12940,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-bedroom-v1-960.webp",
+      "status": 200,
+      "bytes": 39874,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-bedroom-v1-1200.webp",
+      "status": 200,
+      "bytes": 54634,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-office-v1-480.webp",
+      "status": 200,
+      "bytes": 13542,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-office-v1-960.webp",
+      "status": 200,
+      "bytes": 37474,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-office-v1-1600.webp",
+      "status": 200,
+      "bytes": 81760,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/roller-layering-v1-480.webp",
+      "status": 200,
+      "bytes": 18782,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/roller-layering-v1-960.webp",
+      "status": 200,
+      "bytes": 60096,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/roller-layering-v1-1600.webp",
+      "status": 200,
+      "bytes": 132796,
+      "type": "image/webp",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-project-silent-v1.mp4",
+      "status": 200,
+      "bytes": 1574351,
+      "type": "video/mp4",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-project-silent-v1.mp4",
+      "status": 200,
+      "bytes": 1576774,
+      "type": "video/mp4",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/sheers-project-poster-v1.jpg",
+      "status": 200,
+      "bytes": 56984,
+      "type": "image/jpeg",
+      "matchesLocal": true
+    },
+    {
+      "url": "/assets/projects/blockout-project-poster-v1.jpg",
+      "status": 200,
+      "bytes": 60896,
+      "type": "image/jpeg",
+      "matchesLocal": true
+    }
+  ],
+  "heroRange": {
+    "status": 206,
+    "contentRange": "bytes 0-1/25642239",
+    "bytes": 2
+  },
+  "result": "pass",
+  "failures": [],
+  "boundary": "HTTP content and byte-identity validation only. Browser layout, hydration, colour clicks, focus and video playback remain separate checks."
+}
